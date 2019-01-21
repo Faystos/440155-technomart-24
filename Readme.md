@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Владимир Садовников](https://up.htmlacademy.ru/htmlcss/24/user/440155).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Фарига] (https://htmlacademy.ru/profile/maximfariga).
 
 ---
 
