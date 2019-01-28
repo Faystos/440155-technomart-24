@@ -9,41 +9,43 @@
 <body>
   <header class="mainHeader">
   <section class="mainOrder">
-    <a href="headLogo">Техномарт</a>
-    <input type="search"  placeholder="Поиск">
-    <!-- форма закладки -->
-    <!-- форма корзина -->
-    <a href = "basket.html">Оформить заказ</a>
+    <a class="headLogo">Техномарт</a>
+  <form>
+    <label for="mainSearch">Поиск</label>  
+    <input type="search" id="mainSearch" placeholder="Поиск">	
+  </form>	
+    <a class="bookmark" href="#">Закладки</a>
+    <a class="basket" href="#">Корзина</a>
+    <a class="placeOrder" href="#">Оформить заказ</a>
   </section>
   
-  <section class="opening">
-      <div class="mainOpening">
-        <h1 class="titleOpening">
-        Интернет-магазин строительных материалов и инструментов для ремонта 
-        </h1>
-      </div>
+  <section class="mainOpening">      
+      <h1 class="titleOpening">Интернет-магазин строительных материалов и инструментов для ремонта</h1>     	   
+    <address class="addressHeader">
+      <a class="headNumber" href="tel:+78125550555">+7(812)555-05-55</a>
+      <p class="headAddress">г.Санкт-Петербург, ул.Б.Клнюшенная,д.19/8</p>
+    </address>
 	  
-	  <div class="mainAddress"> 
-        <address class="addressHeader">
-          <a class="headNumber" href="tel:+78125550555">+7(812)555-05-55</a>
-          <p class="headAddress">
-          г.Санкт-Петербург, ул.Б.Клнюшенная,д.19/8
-          </p>
-        </address>
-	  </div>
+	<div class="mainRegistration">
+	  <a class="enter" href="#"><img src="enter.png" alt="войти">Войти</a>		
+	  <a class="registration" href="#">Регистрация</a>		
+	</div>
+	  
+	  
+  </section>	  
 	
-	  <div class= "mainNavigation">
-        <nav class="Navigation"> 
-          <ul>
-            <li><a class="navigationList" href="index.html">Главная</a></li>
-            <li><a class="navigationList" href="kompany.html">Компания</a></li>
-            <li><a class="navigationList" href="katalog.html">Каталог</a></li>
-            <li><a class="navigationList" href="news.html">Новости</a></li>
-            <li><a class="navigationList" href="specOffer.html">Cпецпредложение</a></li>
-            <li><a class="navigationList" href="delivery.html">Доставка</a></li>
-            <li><a class="navigationList" href="contact.html">Контакты</a></li>
-          </ul>
-        </nav>
+  <section class= "mainNav">
+    <nav class="listNav"> 
+      <ul>
+        <li><a class="nav">Главная</a></li>
+        <li><a class="nav" href="#">Компания</a></li>
+        <li><a class="nav" href="katalog.html">Каталог</a></li>
+        <li><a class="nav" href="#">Новости</a></li>
+        <li><a class="nav" href="#">Cпецпредложение</a></li>
+        <li><a class="nav" href="#">Доставка</a></li>
+        <li><a class="nav" href="#">Контакты</a></li>
+      </ul>
+    </nav>
 	  </div>	
   
   </section>
@@ -51,7 +53,7 @@
 </header>
 
 <main>
-    <section class="mainListServices"> 
+    <div class="mainListServices"> 
       <ul>
         <li>
           <h2 class="titleServises"> Материалы</h2> 
@@ -67,6 +69,27 @@
           <h2 class="titleServises">Техника</h2> 
           <a class="linkServises" href="construction.html">для стройки</a>
         </li>
+		<li>
+		  <section class="gallery">
+            <div class="slider">
+              <input type="radio" name="slider1" id="slider1_1" checked="checked">
+              <label for="slider1_1"></label>
+            <div class="mainSliderOne">
+			  <img src="imageSlider1.png" alt="Дрели соседям на радость">
+              <p class="sliderOne">Дрели</p>
+		      <p class="sliderOne">соседям на радость</p>              
+            </div>            
+              <input type="radio" name="slider1" id="slider1_2">
+              <label for="slider1_2"></label>
+            <div class="mainSliderTwo">
+			  <img src="imageSlider2.png" alt="Второй слайд">
+              <p class="sliderTwo">Текст для второго слайда</p>              
+            </div>
+	        <div class="prev">назад</div>
+            <div class="next">вперед</div>
+            </div>
+          </section>
+		</li>
 
         <li>
           <h2  class="titleServises">Скидка 50%</h2>
@@ -79,50 +102,86 @@
         </li>
       </ul>
 
-    </section>
+    </div>
 	
     <section class="gallery">
-       <figure class="galleryContent">
-        <img src="gallery.png" alt="ДРЕЛИ, соседям на радость">
-        <div class="prev">назад</div>
-        <div class="next">вперед</div>
-       </figure>
+      <div class="mainSlider">
+          <input type="radio" name="slider1" id="slider1_1" checked="checked">
+		  <input type="radio" name="slider1" id="slider1_2">
+	    <div class="slider">	
+          <label for="slider1_1"></label>
+		  <label for="slider1_2"></label>
+	    </div>	
+        <div class="mainSliderOne">
+	      <img src="imageSlider1.png" alt="Дрели соседям на радость">
+          <p class="sliderOne">Дрели</p>
+		  <p class="sliderOne">соседям на радость</p>        
+        </div>        
+        
+        <div class="mainSliderTwo">
+	      <img src="imageSlider2.png" alt="Второй слайд">
+          <p class="sliderTwo">Текст для второго слайда</p>.        
+        </div>
+	    <div class="changeSlide">
+	      <label for="prev">назад</label>
+          <label for="next">вперед</label>
+        </div>
+	  </div>
     </section>
 	
     <section class="mainPopularGoods">
-	   <div class="popular">
-      <h2 class="titlePopular">ПОПУЛЯРНЫЕ ТОВАРЫ</h2>
-      <a class="PopularGoods" href="catalog.html">Все популярные товары</a>
+	  <div class="popular">
+        <h2 class="titlePopular">ПОПУЛЯРНЫЕ ТОВАРЫ</h2>
+        <a class="PopularGoods" href="catalog.html">Все популярные товары</a>
 	  </div>
 
 
       <ul class="priceList">
 
         <li> 
-          <h3 class="priceTitle">Перфоратор BOSCH BFG 9000</h3> 
-          <span><del>32500</del></span><!--перечернуто-->
-          <a class="price" href="BFG9K.html">25500 Р.</a>
-		  <img src="bfg9k.png" alt="bfg9k">
+		    <img src="bfg9k.png" alt="bfg9k">
+            <h3 class="priceTitle"><a class="price" href="#">Перфоратор BOSCH BFG 9000</a></h3> 
+            <del class="oldPrice">32500</del>
+            <a class="price" href="#">25500 Р.</a>
+          <div class="mainBpopup">
+            <a class="buyBpopup" href="#"><img class="imgBpopup" src="imgBpopup.png" alt="купить">Купить</a>
+            <a class="basketBpopup" href="#">В корзину</a>        
+          </div>  		  
         </li>
 
         <li>
-          <h3 class="priceTitle">Перфоратор BOSCH BFG 3000</h3> 
-          <span><del>22500</del></span><!--перечернуто-->
-          <a class="price" href="BFG3K.html">15500 Р.</a>
 		  <img src="bfg3k.png" alt="bfg3k">
+          <h3 class="priceTitle"><a class="price" href="#">Перфоратор BOSCH BFG 3000</a></h3> 
+          <del class="oldPrice">22500</del>
+          <a class="price" href="#">15500 Р.</a>
+		<div class="mainBpopup">
+          <a class="buyBpopup" href="#"><img class="imgBpopup" src="imgBpopup.png" alt="купить">Купить</a>
+          <a class="basketBpopup" href="#">В корзину</a>        
+        </div>  		  
+		  
         </li>
 
        <li>
-          <h3 class="priceTitle">Перфоратор BOSCH BFG 6000</h3> 
-          <span><del>30500</del></span><!--перечернуто-->
-          <a class="price" href="BFG6K.html">25500 Р.</a>
-		  <img src="bfg6k.png" alt="bfg6k">
+	        <img src="bfg6k.png" alt="bfg6k">
+            <h3 class="priceTitle"><a class="price" href="#">Перфоратор BOSCH BFG 6000</a></h3> 
+            <del class="oldPrice">30500</del>
+            <a class="price" href="#">25500 Р.</a>
+          <div class="mainBpopup">
+            <a class="buyBpopup" href="#"><img class="imgBpopup" src="imgBpopup.png" alt="купить">Купить</a>
+            <a class="basketBpopup" href="#">В корзину</a>        
+          </div>  		  		  
        </li>
 
        <li>
-         <h3 class="priceTitle">Перфоратор BOSCH BFG 2000</h3> 
-         <a class="price" href="BFG2K.html">12500 Р.</a>
-		 <img src="bfg2k.png" alt="bfg2k">
+	       <img src="bfg2k.png" alt="bfg2k">
+		   <img class="newProduct" src="newproduct.png" alt="new">
+           <h3 class="priceTitle"><a class="price" href="#">Перфоратор BOSCH BFG 2000</a></h3> 
+           <a class="price" href="BFG2K.html">12500 Р.</a>
+		 <div class="mainBpopup">
+            <a class="buyBpopup" href="#"><img class="imgBpopup" src="imgBpopup.png" alt="купить">Купить</a>
+            <a class="basketBpopup" href="#">В корзину</a>        
+         </div>  		  
+         		 
        </li>
 
       </ul>
@@ -131,7 +190,7 @@
     <section class="popularMaker">
       <div class="popular">
         <h2 class="titlePopular">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ</h2>
-        <a class="PopularMaker" href="maker.html">Все производители</a>
+        <a class="popularMaker" href="maker.html">Все производители</a>
       </div>
 	  
       <ul сlass="maker">
@@ -178,24 +237,36 @@
       </div>
 
       <div class="mainDelivery">
-        <h2 class="tatleDelivery">Доставка</h2>
-        <p class="descriptionDelivery">Мы с удовольствие доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-        Ведь мы не плохо заработаем, поднимая его на ваш этаж! </p>
+	      <input type="radio" class="hiddenDisplay" id="delivery" name="service">
+		  <input type="radio" class="hiddenDisplay" id="guarantee" name="service">
+		  <input type="radio" class="hiddenDisplay" id="loan" name="service">
+	  
+	      <ul class="mainDeliveryControl">
+		    <li><label for="delivery">Доставка</label></li>
+		    <li><label for="guarantee">Гарантия</label></li>
+		    <li><label for="loan">Кредит</label></li>
+		  </ul>
 		
-		<ul class="descriptionServices">
-		  <li>
-		  <p class="description">Доставка</p>
-		  </li>
-		  <li>
-		  <p class="description">Гарантия</p>
-		  </li>
-		  <li>
-		  <p class="description">Кредит</p>
-		  </li>
-		</ul>
+        <div class="mainDeliveryDescr">
+          <img src="delivery.png" alt="фоновая картинка">		
+          <h2 class="tatleDelivery">Доставка</h2>
+          <p class="descrDelivery">Мы с удовольствие доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
+          <p class="descrDelivery">Ведь мы не плохо заработаем, поднимая его на ваш этаж! </p>
+        </div>
+     
+        <div class="mainDeliveryDescription">
+          <img src="guarantee.png" alt="фоновая картинка">		
+          <h2 class="tatleGuarantee">Гарантия</h2>
+          <p class="descriptionDelivery">Текст для гарантии</p>        
+        </div>
+        <div class="mainDeliveryDescription">
+          <img src="loan.png" alt="фоновая картинка">		
+          <h2 class="tatleLoan">Кредит</h2>
+          <p class="descriptionDelivery">Текст для кредита</p>        
+        </div>		
       </div>
 
-      <img src="service.png" alt="фоновая картинка">
+      
 
     </section>
 
@@ -217,59 +288,61 @@
     <a class="infoCompany" href="#">ПОДРОБНЕЕ О КОМПАНИИ</a>
    </div>
 
-    <div class="footercCntact">
-      <h2 class="titleContact">КОНТАКТЫ</h2>
-      <p class="contact">Вы можете забрать товар сами, заехав в наш офис:</p>
-      <a class="maps" href="#"><img src="maps.png" alt="maps"></a>
-      <a class="we" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ! </a>
+    <div class="mainfootercCntact">
+        <h2 class="titleContact">КОНТАКТЫ</h2>
+        <p class="footerContact">Вы можете забрать товар сами, заехав в наш офис:</p>
+        <a class="ourLocation" href="#"><img src="maps.jpg" alt="maps"></a>
+        <a class="writeToUs" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ! </a>
+	  <div class="mainFooterBpopup">
+        <img class="footerBpopup" src="bpopupmaps.jpg" alt="Всплывающая карта">                
+      </div>  		  
     </div>
   </section>
 </main>
 
 <footer>
     <section class="mainFooter">
-        <a class="footerLogo" href = "home.html"><p>ТЕХНОМАРТ</p></a>
-    </section>
-	
-    <div class="mainFooterAddress">	
-      <address class="footeraddress">
+        <a class="footerLogo">ТЕХНОМАРТ</a>
+    	
+      <address class="mainFooteraddress">
         <a class="footerNumber" class="footernumber" href="tel:+78125550555">+7(812)555-05-55</a>
         <p class="addressFooter">г.Санкт-Петербург, ул.Б.Клнюшенная,д.19/8</p>
-      </address>
-    </div>
+      </address>    
 
-    <section class="footerNav">
-      <ul class="navFooterList">
-        <li><a class="footerList"  href= "kompany.html">Компания</a></li>
-        <li><a class="footerList" href= "news.html">Новости</a></li>
-        <li><a class="footerList" href= "katalog.html">Каталог</a></li>
-        <li><a class="footerList" href= "delivery.html">Доставка</a></li>
-        <li><a class="footerList" href= "contact.html">Контакты</a></li>
-      </ul>
+      <div class="mainNavFooter">
+        <ul class="navListFooter">
+          <li><a class="navFooter"  href= "#">Компания</a></li>
+          <li><a class="navFooter" href= "#">Новости</a></li>
+          <li><a class="navFooter" href= "katalog.html">Каталог</a></li>
+          <li><a class="navFooter" href= "#">Доставка</a></li>
+          <li><a class="navFooter" href= "#">Контакты</a></li>
+        </ul>
 	  
-	  <ul>
-	    <li><a class="otherNav" href="material.html">Материалы</a></li>
-		<li><a class="otherNav" href="technique.html">Техника</a></li>
-		<li><a class="otherNav" href="tool.html">Инструмент</a></li>
-		<li><a class="otherNav" href="specOffer.html">Спецпредложения</a></li>
-	  </ul>
+	    <ul class="otherNavListFooter">
+	      <li><a class="otherNav" href="#">Материалы</a></li>
+		  <li><a class="otherNav" href="#">Техника</a></li>
+		  <li><a class="otherNav" href="#">Инструмент</a></li>
+		  <li><a class="otherNav" href="#">Спецпредложения</a></li>
+	    </ul>
+	  </div>  
     </section>
  
-    <section class="footerRight">
-      <p class="Right">©2010-2019 Компания "Техномарт" Все права защищены</p>
-    </section>
+    <section class="footerInformation">
+      <p class="legalInformation">©2010-2019 Компания "Техномарт" Все права защищены</p>
+    
 	
-    <section class="mainSocial">	
-      <ul class="footerSocial">
-        <li><a class="social" href="vk.com">ВКонтакте</a></li>
-        <li><a class="social" href="facebook.com">Facebook</a></li>
-        <li><a class="social" href="instagram.com">Instagram</a></li>
-      </ul>	  
-    </section>
+      <div class="mainFooterSocial">	
+        <ul class="footerSocial">
+          <li><a class="social" href="vk.com">ВКонтакте</a></li>
+          <li><a class="social" href="facebook.com">Facebook</a></li>
+          <li><a class="social" href="instagram.com">Instagram</a></li>
+        </ul>	  
+      </div>
 	
-    <section class="linkMail">
-      <p class="mail">Обратная связь:<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a> </p>
-      <p class="link">Разработано-<a href="htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+      <div class="linkMail">
+        <p class="mail">Обратная связь:<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a> </p>
+        <p class="link">Разработано-<a href="htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+	  </div>  
     </section>
 </footer> 
 </body>
