@@ -75,11 +75,11 @@
 	      <section class="mainFilterMaker">
 	        <h3 class="titleFilterMaker">Производители:</h3>
           <ul class="allMaker">
-	          <li><label class="makerBosch"><input type="checkbox" name="maker" value="bosch" checked>bosch</label></li>
-		        <li><label class="makerInterscol"><input type="checkbox" name="maker" value="interscol">интерскол</label></li>
-		        <li><label class="makerMakita"><input type="checkbox" name="maker" value="makita" checked>makita</label></li>
-		        <li><label class="makerDewalt"><input type="checkbox" name="maker" value="dewalt">dewalt</label></li>
-		        <li><label class="makerHitachi"><input type="checkbox" name="maker" value="hitachi">hitachi</label></li>
+	          <li><label class="makerBosch"><input type="checkbox" name="maker[]" value="bosch" checked>bosch</label></li>
+		        <li><label class="makerInterscol"><input type="checkbox" name="maker[]" value="interscol">интерскол</label></li>
+		        <li><label class="makerMakita"><input type="checkbox" name="maker[]" value="makita" checked>makita</label></li>
+		        <li><label class="makerDewalt"><input type="checkbox" name="maker[]" value="dewalt">dewalt</label></li>
+		        <li><label class="makerHitachi"><input type="checkbox" name="maker[]" value="hitachi">hitachi</label></li>
           </ul>
 	      </section>
 
@@ -88,9 +88,9 @@
             <ul class="allPowerSupply">
               <li><label for="rechargeable"><input type="radio" name="supply" value="rechargeable" checked>аккумуляторные</label></li>
 		          <li><label for="networking"><input type="radio" name="supply" value="networking">сетевые</label></li>
-            </ul>
-              <button type="submit">Показать</button>
+            </ul>              
 	      </section>
+		  <button type="submit">Показать</button>
 	    </form>
 	  </section>
 
