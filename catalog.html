@@ -8,15 +8,14 @@
 
 <body>
   <header class="mainHeader">
-  <section class="mainOrder">
-    <a class="headLogo" href="index.html"><img src="img/logo.png" alt="логотип техномарт">Техномарт</a>
-  <form class="headSearch">
-    <label for="mainSearch">Поиск</label>
-    <input type="search" id="mainSearch" placeholder="Поиск">
-  </form>
-    <a class="bookmark" href="#">Закладки</a>
-    <a class="basket" href="#">Корзина:10</a>
-    <a class="placeOrder" href="#">Оформить заказ</a>
+    <section class="mainOrder">
+        <a class="headLogo" href="index.html"><img src="img/logo.png" alt="логотип техномарт">Техномарт</a>
+      <form class="headSearch" action="#" method="get" name="search">    
+        <label for="mainSearch"><span>Поиск</span><input type="search" id="mainSearch" placeholder="Поиск"></label>
+      </form>
+        <a class="bookmark" href="#">Закладки</a>
+        <a class="basket" href="#">Корзина:10</a>
+        <a class="placeOrder" href="#">Оформить заказ</a>
   </section>
 
   <section class="mainOpening">
@@ -34,8 +33,6 @@
 	    <li><a href="#">Личный кабинет</a></li>
 	  </ul>
 	</div>
-
-
   </section>
 
   
@@ -49,12 +46,8 @@
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-    </nav>
-	 
-
-  
-
-</header>
+    </nav>	
+  </header>
 
 <main>
 
@@ -215,14 +208,14 @@
 		         <li><a class="paginationNext" href="#">Следующая</a></li>
 	        </ul>
         </div>
-		<div class="mainBasketForm">
+		<div class="popupBasketForm">
           <img src="img/form/form-basket.png" alt="Картинка подтвердающая заказ">
 	      <p class="basketForm">Товар добавлен в корзину!</p>
 	      <a href="#">ОФОРМИТЬ ЗАКАЗ</a>
-          <form action="" method="">     	  
-	        <button class="basketButton" type="button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
-            <button class="buttonClose" type="button">закрыть</button>	  
-            </form>
+               	  
+	      <button class="basketButton" type="button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+          <button class="popupClose" type="button">закрыть</button>	  
+            
         </div>
     </div>
 
@@ -244,7 +237,7 @@
     <section class="mainFooter">
         <a class="footerLogo" href="index.html"><img src="img/logo.png" alt="логотип техномарт">ТЕХНОМАРТ</a>
 
-      <address class="mainFooteraddress">
+      <address class="mainFooterAddress">
         <a class="footerNumber" class="footernumber" href="tel:+78125550555">+7(812)555-05-55</a>
         <p class="addressFooter">г.Санкт-Петербург, ул.Б.Клнюшенная,д.19/8</p>
       </address>
