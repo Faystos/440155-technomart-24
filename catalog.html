@@ -10,7 +10,7 @@
   <header class="mainHeader">
     <section class="mainOrder">
         <a class="headLogo" href="index.html"><img src="img/logo.png" alt="логотип техномарт">Техномарт</a>
-      <form class="headSearch" action="#" method="get" name="search">    
+      <form class="headSearch" action="#" method="post" name="search">
         <label for="mainSearch"><span>Поиск</span><input type="search" id="mainSearch" placeholder="Поиск"></label>
       </form>
         <a class="bookmark" href="#">Закладки</a>
@@ -35,7 +35,7 @@
 	</div>
   </section>
 
-  
+
     <nav class="mainNav">
       <ul>
         <li><a href="index">Главная</a></li>
@@ -46,7 +46,7 @@
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
-    </nav>	
+    </nav>
   </header>
 
 <main>
@@ -61,7 +61,7 @@
 	<h2 class="titleNameItem">Перфораторы</h2>
 
     <div class="mainFilter">
-      <section class="filter">
+      <section class="filter" action="#" method="get" name="filter">
 	      <form class="filterForm">
 	        <h2 class="titleMainFilter">Фильтр:</h2>
 
@@ -81,7 +81,7 @@
             <ul class="allPowerSupply">
               <li><label for="rechargeable"><input type="radio" name="supply" value="rechargeable" checked>аккумуляторные</label></li>
 		          <li><label for="networking"><input type="radio" name="supply" value="networking">сетевые</label></li>
-            </ul>              
+            </ul>
 	      </section>
 		  <button type="submit">Показать</button>
 	    </form>
@@ -212,10 +212,10 @@
           <img src="img/form/form-basket.png" alt="Картинка подтвердающая заказ">
 	      <p class="basketForm">Товар добавлен в корзину!</p>
 	      <a href="#">ОФОРМИТЬ ЗАКАЗ</a>
-               	  
+
 	      <button class="basketButton" type="button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
-          <button class="popupClose" type="button">закрыть</button>	  
-            
+          <button class="popupClose" type="button">закрыть</button>
+
         </div>
     </div>
 
