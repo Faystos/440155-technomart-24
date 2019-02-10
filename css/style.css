@@ -1,0 +1,561 @@
+html {
+
+
+}
+
+body {
+margin: 0;
+background-color: #ffffff;
+
+}
+
+a {
+  text-decoration: none;
+  }
+ul {
+   list-style: none;
+ }
+ .mainHeader {
+   background-color: #f4f7f9;
+ }
+
+.mainOrder {
+background-color: #293449;
+}
+
+.headLogo {
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+}
+.bookmark,
+.basket,
+.placeOrder {
+  font-family: Cuprum;
+  font-size: 17px;
+  line-height: 1.06;
+  color: #ffffff;
+}
+
+.catalogSorting {
+  background-color: #f7f3ec;
+}
+
+.tatliSorting {
+  font-family: PT Sans;
+  font-size: 13px;
+  line-height: 1.38;
+  text-align: left;
+  color: #000000;
+}
+.sortingType a{
+  font-family: PT Sans;
+ font-size: 13px;
+ line-height: 1.38;
+ text-align: left;
+ color: rgba(0, 0, 0, 0.3);
+}
+.sortingType a:active {
+  font-family: PT Sans;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.38;
+  text-align: left;
+  color: #ee3643;
+}
+
+
+.pagination a {
+  font-family: PT Sans;
+  font-size: 13px;
+  line-height: 1.38;
+  text-align: center;
+  color: #000000;
+}
+.pagination a:hover,
+.pagination a:active{
+  font-family: PT Sans;
+  font-size: 13px;
+  line-height: 1.38;
+  text-align: center;
+  color: #ffffff;
+}
+
+.popupBasketForm {
+  width: 620px;
+  height: 282px;
+  border-top: 7px solid #ee3643;
+  box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75)
+}
+.basketForm {
+  font-family: Cuprum;
+  font-size: 30px;
+  line-height: 1;
+  text-align: center;
+  color: #000000;
+}
+
+.popupBasketForm a {
+  width: 220px;
+  height: 38px;
+  background-color: #ee3643;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: #ffffff;
+}
+.basketButton {
+  width: 220px;
+  height: 38px;
+  font-family: Cuprum;
+  background-color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: #000000;
+}
+
+.mainDefinitionProduct {
+  background-color: #f4f7f9;
+}
+.tatleDefinition {
+  font-family: Cuprum;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1;
+  color: #000000;
+}
+.definitionProduct {
+  font-family: Cuprum;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.85;
+  text-align: left;
+  color: #000000;
+}
+
+.mainFooterAddress {
+  font-family: Cuprum;
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: left;
+  color: #f1f5f7;
+}
+
+.placeOrder {
+  font-family: Cuprum;
+  background-color: #63a63e;
+}
+
+.mainOpening {
+  background-color: #f4f7f9;
+}
+
+.titleOpening {
+ font-family: Cuprum;
+ font-size: 16px;
+ font-style: italic;
+ font-weight: 400;
+ line-height: 1.44;
+ color: #ee3643;
+}
+
+.headNumber {
+   font-family: Cuprum;
+   font-size: 21px;
+   line-height: 1;
+
+   color: #ee3643;
+ }
+
+ .headAddress {
+  font-family: Cuprum;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #32425c;
+ }
+
+.mainRegistration a {
+  font-family: Cuprum;
+  font-size: 21px;
+  line-height: 1;
+  color: #000000;
+}
+
+.profile {
+  font-family: Cuprum;
+  font-size: 21px;
+  line-height: 1;
+  text-align: left;
+  color: #000000;
+}
+
+.personalAccount a {
+  font-family: Cuprum;
+ font-size: 16px;
+ line-height: 1.13;
+ text-align: left;
+ color: #32425c;
+ text-decoration: underline;
+}
+
+.breadcrumbs a {
+  font-family: PT Sans;
+ font-size: 13px;
+ line-height: 1.38;
+ text-align: left;
+ color: #000000;
+}
+
+.mainNav {
+  box-shadow: inset 0px -5px 0 0 #293449;
+  background-color: #32425c;
+}
+
+
+.mainNav a {
+  font-family: Cuprum;
+  font-size: 17px;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.titleServises {
+  font-family: Cuprum;
+  font-size: 24px;
+  line-height: 1.25;
+  color: #ffffff;
+}
+
+.titleNameItem {
+  font-family: Cuprum;
+  font-size: 30px;
+  line-height: 1;
+  text-align: left;
+  color: #32425c;
+  background-color: #f2f6f8;
+}
+
+.titleMainFilter {
+  font-family: PT Sans;
+  font-size: 13px;
+  line-height: 1.38;
+  text-align: left;
+  color: #000000;
+  background-color: #f7f3ec;
+}
+
+.titleFilterMaker,
+.titlePrice,
+.titlepowerSupply {
+  font-family: PT Sans;
+  font-size: 17px;
+  line-height: 1.76;
+  text-align: left;
+  color: #000000;
+}
+
+
+.allMaker,
+.allPowerSupply  {
+  font-family: PT Sans;
+  font-size: 15px;
+  line-height: 1.33;
+  text-align: left;
+  color: #000000;
+  text-transform: uppercase;
+}
+.buttonFilter {
+  font-size: 13px;
+  line-height: 1.38;
+  text-align: center;
+  color: #000000;
+  width: 140px;
+  height: 38px;
+  background-color: #ffffff;
+}
+
+
+.linkServises {
+  font-size: 14px;
+  line-height: 1.29;
+  color: #ffffff;
+
+}
+
+.material  {
+  background-color: #ffbf47;
+}
+
+.tools {
+  background-color: #3bbce3;
+}
+.technique {
+  background-color: #dc91d8;
+}
+.discount{
+    background-color:#8ed78f;
+}
+.listDelivery {
+  background-color: #ffbf47;
+}
+
+.popular {
+  background-color: #f9f5f0;
+}
+
+.sliderTitle {
+  font-family: Cuprum;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+  color: #ffffff;
+  /*временный  bk*/
+  background-color: #000000;
+}
+.sliderText {
+  font-family: Cuprum;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #ffffff;
+  /*временный  bk*/
+  background-color: #000000;
+}
+
+.titlePopular {
+  font-family: Cuprum;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1;
+  color: #32425c;
+}
+
+.popularGoods,
+.popularMaker{
+  font-family: Cuprum;
+  font-size: 14px;
+  line-height: 1.29;
+  background-color: #ee3643;
+  color: #ffffff;
+}
+
+.priceTitle a {
+  font-family: PT Sans;
+  font-size: 18px;
+  line-height: 1.11;
+  color: #000000;
+}
+.oldPrice {
+  font-family: PT Sans;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.06;
+  text-align: center;
+  color: #a9a9a9;
+}
+.price  {
+  font-family: PT Sans;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.06;
+  color: #ffffff;
+  /*временный бг*/
+  background-color: #ee3643;
+}
+
+.buyPopup {
+  box-shadow: inset 0px -3px 0 0 #367315;
+  background-color: #63a63e;
+  font-family: Cuprum;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #ffffff;
+}
+.basketPopup {
+  background-color: #ffffff;
+  font-family: Cuprum;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #32425c;
+  border: 2px solid #63a63e;
+}
+
+
+.service {
+  background-color: #f4f7f9;
+}
+.titleGood {
+  font-family: Cuprum;
+  font-size: 30px;
+  line-height: 1;
+  color: #000000;
+}
+
+.goodServises p {
+  font-family: PT Sans;
+  font-size: 13px;
+  line-height: 1.85;
+  color: #000000;
+
+}
+.mainDeliveryControl   {
+  background-color: #32425c;
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.43;
+  color: #ffffff;
+}
+.titleDelivery {
+  font-family: Cuprum;
+  font-size: 36px;
+  line-height: 1;
+  color: #32425c;
+}
+
+.descrDelivery {
+  font-family: PT Sans;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.company {
+background-color: #ffffff;
+}
+.titleCompany {
+  font-family: Cuprum;
+  font-size: 30px;
+  line-height: 1;
+  color: #000000;
+}
+.descrCompany {
+  font-family: PT Sans;
+  font-size: 13px;
+  line-height: 1.85;
+  color: #000000;
+}
+.listCompany {
+  font-family: Cuprum;
+  font-size: 18px;
+  line-height: 1.11;
+  color: #000000;
+}
+
+.infoCompany {
+  background-color: #ee3643;
+  font-family: Cuprum;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #ffffff;
+}
+
+.titleContact {
+  font-family: Cuprum;
+  font-size: 30px;
+  line-height: 1;
+  color: #000000;
+}
+.footerContact {
+  font-family: PT Sans;
+  font-size: 13px;
+  line-height: 1.85;
+  color: #000000;
+}
+
+.writeToUs {
+  font-family: Cuprum;
+  font-size: 14px;
+  line-height: 1.29;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+.footerLogo {
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+}
+.mainFooter {
+  background-color: #32425c;
+}
+.mainFooteraddress{
+  font-family: Cuprum;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #f3f7f9;
+}
+.footerNumber {
+  font-family: Cuprum;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #f3f7f9;
+}
+
+.navListFooter a {
+  font-family: Cuprum;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #f3f7f9;
+}
+.otherNavListFooter a {
+  font-family: Cuprum;
+  font-size: 18px;
+  line-height: 1.33;
+  color: #ffd180;
+}
+.footerInformation {
+  background-color: #293449;
+}
+.legalInformation p {
+  font-family: Cuprum;
+  font-size: 16px;
+  line-height: 1.13;
+  color: #ffffff;
+}
+.social {
+  background-color: #212a3a;
+}
+.linkMail p {
+  font-family: Cuprum;
+  font-size: 16px;
+  line-height: 1.13;
+  color: #ffffff;
+}
+.linkMail a {
+  font-family: Cuprum;
+  font-size: 16px;
+  line-height: 1.13;
+  color: #ffd180;
+}
+
+.popupContact {
+  width: 620px;
+  height: 430px;
+  border-top: #ee3643;
+  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+
+.mainMessage {
+  font-family: Cuprum;
+  font-size: 18px;
+  line-height: 1;
+  text-align: left;
+  color: #000000;
+}
+.mainFormSend {
+  background-color: #f4f4f4;
+}
+.formSend {
+  width: 460px;
+  height: 38px;
+  background-color: #ee3643;
+  font-family: Cuprum;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: #ffffff;
+}

@@ -3,13 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <title>Техномарт: Каталог</title>
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+
 </head>
 
 <body>
   <header class="mainHeader">
     <section class="mainOrder">
-        <a class="headLogo" href="index.html"><img src="img/logo.png" alt="логотип техномарт">Техномарт</a>
+        <a class="headLogo" href="index.html"><img src="img/logo.png" alt="логотип техномарт"></a>
       <form class="headSearch" action="#" method="post" name="search">
         <label for="mainSearch"><span>Поиск</span><input type="search" id="mainSearch" placeholder="Поиск"></label>
       </form>
@@ -64,9 +68,10 @@
       <section class="filter" action="#" method="get" name="filter">
 	      <form class="filterForm">
 	        <h2 class="titleMainFilter">Фильтр:</h2>
+          <h2 class="titlePrice">ЦЕНА:</h2>
 
 	      <section class="mainFilterMaker">
-	        <h3 class="titleFilterMaker">Производители:</h3>
+	        <h3 class="titleFilterMaker">ПРОИЗВОДИТЕЛИ:</h3>
           <ul class="allMaker">
 	          <li><label class="makerBosch"><input type="checkbox" name="maker[]" value="bosch" checked>bosch</label></li>
 		        <li><label class="makerInterscol"><input type="checkbox" name="maker[]" value="interscol">интерскол</label></li>
@@ -77,13 +82,13 @@
 	      </section>
 
 	      <section class="powerSupply">
-	          <h3 class="titlepowerSupply">Питание:</h3>
+	          <h3 class="titlepowerSupply">ПИТАНИЕ:</h3>
             <ul class="allPowerSupply">
               <li><label for="rechargeable"><input type="radio" name="supply" value="rechargeable" checked>аккумуляторные</label></li>
 		          <li><label for="networking"><input type="radio" name="supply" value="networking">сетевые</label></li>
             </ul>
 	      </section>
-		  <button type="submit">Показать</button>
+		  <button class="buttonFilter" type="submit">Показать</button>
 	    </form>
 	  </section>
 
@@ -235,7 +240,7 @@
 
 <footer>
     <section class="mainFooter">
-        <a class="footerLogo" href="index.html"><img src="img/logo.png" alt="логотип техномарт">ТЕХНОМАРТ</a>
+        <a class="footerLogo" href="index.html"><img src="img/logo.png" alt="логотип техномарт"></a>
 
       <address class="mainFooterAddress">
         <a class="footerNumber" class="footernumber" href="tel:+78125550555">+7(812)555-05-55</a>
@@ -269,9 +274,9 @@
 
       <div class="mainFooterSocial">
         <ul class="footerSocial">
-          <li><a class="social" href="vk.com">ВКонтакте</a></li>
-          <li><a class="social" href="facebook.com">Facebook</a></li>
-          <li><a class="social" href="instagram.com">Instagram</a></li>
+          <li><a class="social" href="vk.com"> <img src="img/icon/icon-vk.svg" alt="ссылка на ВКонтакте"></a></li>
+          <li><a class="social" href="facebook.com"><img src="img/icon/icon-fb.svg" alt="ссылка на Facebook"></a></li>
+          <li><a class="social" href="instagram.com"><img src="img/icon/icon-insta.svg" alt="ссылка на Instagram"></a></li>
         </ul>
       </div>
 

@@ -3,18 +3,21 @@
 <head>
   <meta charset="utf-8"/>
   <title>Техномарт</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
 </head>
 
 <body>
   <header class="mainHeader">
   <section class="mainOrder">
-    <a class="headLogo"><img src="img/logo.png" alt="логотип техномарт">техномарт</a>
+    <a class="headLogo"><img src="img/logo.png" alt="логотип техномарт"></a>
   <form class="headSearch" action="#" method="post" name="search">
-    <label for="mainSearch"><span>Поиск</span><input type="search" id="mainSearch" placeholder="Поиск"></label>
+    <label for="mainSearch"><input type="search" id="mainSearch" placeholder="Поиск:"></label>
   </form>
     <a class="bookmark" href="#">Закладки</a>
-    <a class="basket" href="#">Корзина</a>
+    <a class="basket" href="#">Корзина:0</a>
     <a class="placeOrder" href="#">Оформить заказ</a>
   </section>
 
@@ -50,19 +53,19 @@
 <main>
     <div class="mainListServices">
       <ul>
-        <li>
+        <li class="material">
 		  <img src="img/proposal/icon-material.png" alt="иконка материалов">
           <h2 class="titleServises">Материалы</h2>
           <a class="linkServises" href="#">на любой вкус</a>
         </li>
 
-        <li>
+        <li class="tools">
 		  <img src="img/proposal/icon-tools.png" alt="иконка инструментов">
           <h2 class="titleServises">Инструмент</h2>
           <a class="linkServises" href="#">на все случаи</a>
         </li>
 
-        <li>
+        <li class="technique">
 		  <img src="img/proposal/icon-technique.png" alt="иконка техники">
           <h2 class="titleServises">Техника</h2>
           <a class="linkServises" href="#">для стройки</a>
@@ -96,13 +99,13 @@
 
 		</li>
 
-        <li>
+        <li class="discount">
 		  <img src="img/proposal/icon-discount.png" alt="иконка скидок">
           <h2 class="titleServises">Скидка 50%</h2>
           <a class="linkServises" href="goods.html">на 350 товаров</a>
         </li>
 
-        <li>
+        <li class="listDelivery">
 		  <img src="img/proposal/icon-delivery.png" alt="иконка доставки">
           <h2 class="titleServises">Доставка</h2>
           <a class="linkServises" href="gratis.html">бесплатно</a>
@@ -115,8 +118,8 @@
 
     <section class="mainPopularGoods">
 	  <div class="popular">
-        <h2 class="titlePopular">ПОПУЛЯРНЫЕ ТОВАРЫ</h2>
-        <a class="popularGoods" href="catalog.html">Все популярные товары</a>
+        <h2 class="titlePopular">популярные товары:</h2>
+        <a class="popularGoods" href="catalog.html">все популярные товары</a>
 	  </div>
 
 
@@ -171,10 +174,10 @@
       </ul>
     </section>
 
-    <section class="popularMaker">
+    <section class="mainPopularMaker">
       <div class="popular">
-        <h2 class="titlePopular">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ</h2>
-        <a class="popularMaker" href="#">Все производители</a>
+        <h2 class="titlePopular">популярные производители:</h2>
+        <a class="popularMaker" href="#">все производители</a>
       </div>
 
       <ul сlass="maker">
@@ -234,21 +237,27 @@
           <div class="mainDescrDelivery">
 		    <img src="img/service/delivery.png" alt="иконка автомобиля">
             <h2 class="titleDelivery">Доставка</h2>
-            <p class="descrDelivery">Мы с удовольствие доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
-            <p class="descrDelivery">Ведь мы не плохо заработаем, поднимая его на ваш этаж! </p>
+              <div class="descrDelivery">
+                <p>Мы с удовольствие доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
+                <p>Ведь мы не плохо заработаем, поднимая его на ваш этаж! </p>
+             </div>
           </div>
 
           <div class="mainDescrDelivery">
 		    <img src="img/service/warranty.png" alt="иконка медали">
             <h2 class="titleDelivery">Гарантия</h2>
-            <p class="descrDelivery">Если купленный у нас товар поломается или заискрит,
-а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
-Дом уж восстановите как-нибудь сами.</p>
+            <div class="descrDelivery">
+              <p>Если купленный у нас товар поломается или заискрит,
+                 а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
+              <p>Дом уж восстановите как-нибудь сами.</p>
+            </div>
           </div>
           <div class="mainDescrDelivery">
 		    <img src="img/service/credit.png" alt="иконка купюр">
             <h2 class="titleDelivery">Кредит</h2>
-            <p class="descrDelivery">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+            <div class="descrDelivery">
+              <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -259,7 +268,7 @@
 
   <section class="company">
     <div class="mainCompany">
-      <h2 class="titleCompany">КОМПАНИЯ ТЕХНОМАРТ</h2>
+      <h2 class="titleCompany">КОМПАНИЯ «ТЕХНОМАРТ»</h2>
 	  <div class="descrCompany">
         <p>Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах</p>
 
@@ -279,8 +288,8 @@
         <p class="footerContact">Вы можете забрать товар сами, заехав в наш офис:</p>
         <a class="ourLocation" href="#"><img src="img/maps/maps.jpg" alt="г.Санкт-Петербург, ул.Б.Клнюшенная,д.19/8"></a>
         <a class="writeToUs" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ! </a>
-	  <div class="mainFooterBpopup">
-        <img class="footerBpopup" src="bpopupmaps.jpg" alt="Всплывающая карта">
+	  <div class="mainFooterPopup">
+        <img class="footerPopup" src="img/maps/popupmaps.jpg" alt="Всплывающая карта">
         <button class="popupClose" type="button">Закрыть</button>
       </div>
     </div>
@@ -289,9 +298,10 @@
         <label for="name"><span>Ваше Имя:</span><input type="text" name="name" id="name" placeholder="Имя Фамилия" pattern="\D [^0-9]" required></label>
         <label for="email"><span>Ваш e-mail:</span><input type="email" name="e-mail" id="email" placeholder="email@example.com" required></label>
         <label for="message"><span>Текст письма:</span><textarea name="message" id="message" placeholder="В свободной форме" required></textarea></label>
-
-	    <button class="formSend" type="submit">Отправить</button>
       </form>
+      <div class="mainFormSend">
+        <button class="formSend" type="submit">Отправить</button>
+      </div>
 	    <button class="popupClose" type="button">Закрыть</button>
     </div>
   </section>
@@ -299,7 +309,7 @@
 
 <footer>
     <section class="mainFooter">
-        <a class="footerLogo"><img src="img/logo.png" alt="логотип техномарт">ТЕХНОМАРТ</a>
+        <a class="footerLogo"><img src="img/logo.png" alt="логотип техномарт"></a>
 
       <address class="mainFooteraddress">
         <a class="footerNumber" href="tel:+78125550555">+7(812)555-05-55</a>
@@ -333,9 +343,9 @@
 
       <div class="mainFooterSocial">
         <ul class="footerSocial">
-          <li><a class="social" href="vk.com">ВКонтакте</a></li>
-          <li><a class="social" href="facebook.com">Facebook</a></li>
-          <li><a class="social" href="instagram.com">Instagram</a></li>
+          <li><a class="social" href="vk.com"> <img src="img/icon/icon-vk.svg" alt="ссылка на ВКонтакте"></a></li>
+          <li><a class="social" href="facebook.com"><img src="img/icon/icon-fb.svg" alt="ссылка на Facebook"></a></li>
+          <li><a class="social" href="instagram.com"><img src="img/icon/icon-insta.svg" alt="ссылка на Instagram"></a></li>
         </ul>
       </div>
 
