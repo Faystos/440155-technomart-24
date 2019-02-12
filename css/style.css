@@ -1,7 +1,15 @@
 @font-face {
-  font-family: PT Sans;
+  font-family: "PT Sans";
   src: url("fonts/PT Sans.woff2") format('woff2'),
-       url("fonts/PT Sans.woff") format("woff");
+       url("fonts/PT Sans.woff") format("woff"),
+       url("fonts/PT Sans.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "PT Sans Bold";
+  src: url("fonts/PT Sans Bold.woff2") format('woff2'),
+       url("fonts/PT Sans Bold.woff") format("woff"),
+       url("fonts/PT Sans Bold.ttf") format("ttf");
 }
 
 html {
@@ -9,7 +17,7 @@ html {
 }
 
 body {
- font-family: Cuprum, Tahoma;
+ font-family: Cuprum, Tahoma,  sans-serif;
 }
 
 a {
@@ -36,7 +44,8 @@ background-color: #293449;
 .bookmark,
 .basket,
 .placeOrder {
-  font:17px/1.06 Cuprum;
+  font-size: 17px;
+  line-height: 1.06;
   color: #ffffff;
 }
 
@@ -45,23 +54,23 @@ background-color: #293449;
 }
 
 .tatliSorting {
-  font:13px/1.38 PT Sans;
+  font:13px/1.38 "PT Sans", Tahoma,  sans-serif;
   color: #000000;
 }
 .sortingType a{
-  font:13px/1.38 PT Sans;
+  font:13px/1.38 "PT Sans", Tahoma,  sans-serif;
   color: rgba(0, 0, 0, 0.3);
 }
 
 .pagination a {
-  font:13px/1.38 PT Sans;
+  font:13px/1.38 "PT Sans", Tahoma,  sans-serif;
   text-align: center;
   color: #000000;
 }
 
 .pagination a:hover,
 .pagination a:active{
-  font:13px/1.38 PT Sans;
+  font:13px/1.38 "PT Sans", Tahoma,  sans-serif;
   text-align: center;
   color: #ffffff;
 }
@@ -73,7 +82,8 @@ background-color: #293449;
 }
 
 .basketForm {
-  font:30px/1 Cuprum;
+  font-size: 30px;
+  line-height: 1;
   text-align: center;
   color: #000000;
 }
@@ -81,7 +91,8 @@ background-color: #293449;
 .popupBasketForm a {
   width: 220px;
   background-color: #ee3643;
-  font:14px/1.29 Cuprum;
+  font-size: 14px;
+  line-height: 1.29;
   text-align: center;
   color: #ffffff;
 }
@@ -89,7 +100,9 @@ background-color: #293449;
 .basketButton {
   width: 220px;
   background-color: #ffffff;
-  font:700 14px/1.29 Cuprum;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
   text-align: center;
   color: #000000;
 }
@@ -99,22 +112,28 @@ background-color: #293449;
 }
 
 .tatleDefinition {
-  font:400 30px/1 Cuprum;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1;
   color: #000000;
 }
 
 .definitionProduct {
-  font:400 13px/1.85 Cuprum;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.85;
   color: #000000;
 }
 
 .mainFooterAddress {
-  font:18px/1.33 Cuprum;
+  font-size: 18px;
+  line-height: 1.33;
   color: #f1f5f7;
 }
 
 .placeOrder {
-  font:17px/1.06 Cuprum;
+  font-size: 17px;
+  line-height: 1.06;
   color: #ffffff;
   background-color: #63a63e;
 }
@@ -124,38 +143,47 @@ background-color: #293449;
 }
 
 .titleOpening {
-  font:italic 400 16px/1.44 Cuprum;
+  font-style: italic;
+  font-weight: 400;
+  font-size:16px;
+  line-height: 1.44;
   color: #ee3643;
 }
 
 .headNumber {
-  font:21px/1 Cuprum;
+  font-size: 21PX;
+  line-height: 1;
   color: #ee3643;
  }
 
 .headAddress {
   font:14px/1.71 Cuprum;
+  font-size: 14PX;
+  line-height: 1.71;
   color: #32425c;
  }
 
 .mainRegistration a {
-  font: 21/1 Cuprum;
+  font-size: 21px;
+  line-height: 1;
   color: #000000;
 }
 
 .profile {
-  font:21px/1 Cuprum;
+  font-size: 21px;
+  line-height: 1;
   color: #000000;
 }
 
 .personalAccount a {
-  font:16px/1.13 Cuprum;
+  font-size: 16px;
+  line-height: 1.13;
   color: #32425c;
   text-decoration: underline;
 }
 
 .breadcrumbs a {
-  font:13/1.38 PT Sans;
+  font:13/1.38 "PT Sans", Tahoma,  sans-serif;
   color: #000000;
 }
 
@@ -166,23 +194,26 @@ background-color: #293449;
 
 
 .mainNav a {
-  font: 17px/1 Cuprum;
+  font-size: 17px;
+  line-height: 1;
   color: #ffffff;
 }
 
 .titleServises {
-  font: 24px/1.25 Cuprum;
+  font-size: 24px;
+  line-height: 1.25;
   color: #ffffff;
 }
 
 .titleNameItem {
-  font: 30px/1 Cuprum;
+  font-size: 30px;
+  line-height: 1;
   color: #32425c;
   background-color: #f2f6f8;
 }
 
 .titleMainFilter {
-  font: 13px/1.38 PT Sans;
+  font: 13px/1.38 "PT Sans", Tahoma,  sans-serif;
   color: #000000;
   background-color: #f7f3ec;
 }
@@ -190,19 +221,19 @@ background-color: #293449;
 .titleFilterMaker,
 .titlePrice,
 .titlepowerSupply {
-  font: 17px/1.76 PT Sans;
+  font: 17px/1.76 "PT Sans", Tahoma,  sans-serif;
   color: #000000;
 }
 
 .allMaker,
 .allPowerSupply  {
-  font: 15px/1.33 PT Sans;
+  font: 15px/1.33 "PT Sans", Tahoma,  sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
 
 .buttonFilter {
-  font: 13px/1.38 PTSans;
+  font: 13px/1.38 "PTSans", Tahoma,  sans-serif;
   text-align: center;
   color: #000000;
   width: 140px;
@@ -210,7 +241,8 @@ background-color: #293449;
 }
 
 .linkServises {
-  font: 14px/1.29 Cuprum;
+  font-size: 14px;
+  line-height: 1.29;
   color: #ffffff;
 }
 
@@ -236,58 +268,66 @@ background-color: #293449;
 }
 
 .sliderTitle {
-  font: 700 36px/1 Cuprum;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1;
   color: #ffffff;
   /*временный  bk*/
   background-color: #000000;
 }
 
 .sliderText {
-  font: 18px/1.33 Cuprum;
+  font-size: 18px;
+  line-height: 1.33;
   color: #ffffff;
   /*временный  bk*/
   background-color: #000000;
 }
 
 .titlePopular {
-  font: 400 30px/1 Cuprum;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1;
   color: #32425c;
 }
 
 .popularGoods,
 .popularMaker{
-  font:14px/1.29 Cuprum;
+  font-size: 14px;
+  line-height: 1.29;
   background-color: #ee3643;
   color: #ffffff;
 }
 
 .priceTitle a {
-  font: 700 18px/1.11 PT Sans;
+  font: 18px/1.11 "PT Sans Bold", Tahoma,  sans-serif;
   color: #000000;
 }
 
 .oldPrice {
-  font:700 17px/1.06 PT Sans;
+  font: 17px/1.06 "PT Sans Bold", Tahoma,  sans-serif;
   text-align: center;
   color: #a9a9a9;
 }
 
 .price  {
-  font: 700 17px/1.06 PT Sans;
+  font: 17px/1.06 "PT Sans", Tahoma,  sans-serif;
   color: #ffffff;
   /*временный бг*/
   background-color: #ee3643;
 }
 
 .buyPopup {
-  font: 14px/1.29 Cuprum;
+  font-size: 14px;
+  line-height: 1.29;
   box-shadow: inset 0px -3px 0 0 #367315;
   background-color: #63a63e;
   color: #ffffff;
 }
 
 .basketPopup {
-  font: 14px/1.29 Cuprum;
+  font-size: 14px;
+  line-height: 1.29;
   background-color: #ffffff;
   color: #32425c;
   border: 2px solid #63a63e;
@@ -298,28 +338,32 @@ background-color: #293449;
 }
 
 .titleGood {
-  font: 30px/1 Cuprum;
+  font-size: 30px;
+  line-height: 1;
   color: #000000;
 }
 
 .goodServises p {
-  font: 13px/1.85 PT Sans;
+  font: 13px/1.85 "PT Sans", Tahoma,  sans-serif;
   color: #000000;
 }
 
 .mainDeliveryControl   {
   background-color: #32425c;
-  font: 700 21px/1.43 Cuprum;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.43;
   color: #ffffff;
 }
 
 .titleDelivery {
-  font: 36px/1 Cuprum;
+  font-size: 36px;
+  line-height: 1;
   color: #32425c;
 }
 
 .descrDelivery {
-  font: 13px/1.85 PT Sans;
+  font: 13px/1.85 "PT Sans", Tahoma,  sans-serif;
   color: #000000;
 }
 
@@ -328,38 +372,43 @@ background-color: #293449;
 }
 
 .titleCompany {
-  font: 30px/1 Cuprum;
+  font-size: 30px;
+  line-height: 1;
   color: #000000;
 }
 
 .descrCompany {
-  font: 13px/1.85 PT Sans;
+  font: 13px/1.85 "PT Sans", Tahoma,  sans-serif;
   color: #000000;
 }
 
 .listCompany {
-  font: 18px/1.11 Cuprum;
+  font-size: 18px;
+  line-height: 1.11;
   color: #000000;
 }
 
 .infoCompany {
   background-color: #ee3643;
-  font: 14px/1.29 Cuprum;
+  font-size: 14px;
+  line-height: 1.29;
   color: #ffffff;
 }
 
 .titleContact {
-  font: 30px/1 Cuprum;
+  font-size: 30px;
+  line-height: 1;
   color: #000000;
 }
 
 .footerContact {
-  font: 13px/1.85 PT Sans;
+  font: 13px/1.85 "PT Sans", Tahoma,  sans-serif;
   color: #000000;
 }
 
 .writeToUs {
-  font: 14px/1.29 Cuprum;
+  font-size: 14px;
+  line-height: 1.29;
   color: #ffffff;
   background-color: #ee3643;
 }
@@ -374,22 +423,26 @@ background-color: #293449;
 }
 
 .mainFooteraddress{
-  font: 18px/1.33 Cuprum;
+  font-size: 18px;
+  line-height: 1.33;
   color: #f3f7f9;
 }
 
 .footerNumber {
-  font: 18px/1.33 Cuprum;
+  font-size: 18px;
+  line-height: 1.33;
   color: #f3f7f9;
 }
 
 .navListFooter a {
-  font: 18px/1.33 Cuprum;
+  font-size: 18px;
+  line-height: 1.33;
   color: #f3f7f9;
 }
 
 .otherNavListFooter a {
-  font: 18px/1.33 Cuprum;
+  font-size: 18px;
+  line-height: 1.33;
   color: #ffd180;
 }
 
@@ -398,7 +451,8 @@ background-color: #293449;
 }
 
 .legalInformation p {
-  font: 16px/1.13 Cuprum;
+  font-size: 16px;
+  line-height: 1.13;
   color: #ffffff;
 }
 
@@ -407,12 +461,14 @@ background-color: #293449;
 }
 
 .linkMail p {
-  font: 16px 1.13 Cuprum;
+  font-size: 16px;
+  line-height: 1.13;
   color: #ffffff;
 }
 
 .linkMail a {
-  font: 16px/1.13 Cuprum;
+  font-size: 16px;
+  line-height: 1.13;
   color: #ffd180;
 }
 
@@ -423,7 +479,8 @@ background-color: #293449;
 }
 
 .mainMessage {
-  font: 18px/1 Cuprum;
+  font-size: 18px;
+  line-height: 1;
   color: #000000;
 }
 
@@ -433,8 +490,9 @@ background-color: #293449;
 
 .formSend {
   width: 460px;
-  background-color: #ee3643;
-  font: 14px/1.29 Cuprum;
+  background-color: #ee3643;  
+  font-size: 14px;
+  line-height: 1.29;
   text-align: center;
   color: #ffffff;
 }
