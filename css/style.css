@@ -311,7 +311,7 @@ background-color: #293449;
 }
 
 .price  {
-  font: 17px/1.06 "PT Sans", Tahoma,  sans-serif;
+  font: 17px/1.06 "PT Sans Bold", Tahoma,  sans-serif;
   color: #ffffff;
   /*временный бг*/
   background-color: #ee3643;
@@ -490,7 +490,7 @@ background-color: #293449;
 
 .formSend {
   width: 460px;
-  background-color: #ee3643;  
+  background-color: #ee3643;
   font-size: 14px;
   line-height: 1.29;
   text-align: center;
