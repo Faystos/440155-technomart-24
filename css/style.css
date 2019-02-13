@@ -1,24 +1,22 @@
 @font-face {
   font-family: "PT Sans";
   src: url("fonts/PT Sans.woff2") format('woff2'),
-       url("fonts/PT Sans.woff") format("woff"),
-       url("fonts/PT Sans.ttf") format("ttf");
+    url("fonts/PT Sans.woff") format("woff"),
+    url("fonts/PT Sans.ttf") format("ttf");
 }
 
 @font-face {
   font-family: "PT Sans";
   font-weight: 700;
   src: url("fonts/PT Sans Bold.woff2") format('woff2'),
-       url("fonts/PT Sans Bold.woff") format("woff"),
-       url("fonts/PT Sans Bold.ttf") format("ttf");
+    url("fonts/PT Sans Bold.woff") format("woff"),
+    url("fonts/PT Sans Bold.ttf") format("ttf");
 }
 
-html {
-
-}
+html {}
 
 body {
- font-family: Cuprum, Tahoma,  sans-serif;
+  font-family: Cuprum, Tahoma, sans-serif;
 }
 
 a {
@@ -31,10 +29,10 @@ ul {
 
 .mainHeader {
   background-color: #f4f7f9;
- }
+}
 
 .mainOrder {
-background-color: #293449;
+  background-color: #293449;
 }
 
 .headLogo {
@@ -55,23 +53,24 @@ background-color: #293449;
 }
 
 .tatliSorting {
-  font:13px/1.38 "PT Sans", Tahoma,  sans-serif;
+  font: 13px/1.38 "PT Sans", Tahoma, sans-serif;
   color: #000000;
 }
-.sortingType a{
-  font:13px/1.38 "PT Sans", Tahoma,  sans-serif;
+
+.sortingType a {
+  font: 13px/1.38 "PT Sans", Tahoma, sans-serif;
   color: rgba(0, 0, 0, 0.3);
 }
 
 .pagination a {
-  font:13px/1.38 "PT Sans", Tahoma,  sans-serif;
+  font: 13px/1.38 "PT Sans", Tahoma, sans-serif;
   text-align: center;
   color: #000000;
 }
 
 .pagination a:hover,
-.pagination a:active{
-  font:13px/1.38 "PT Sans", Tahoma,  sans-serif;
+.pagination a:active {
+  font: 13px/1.38 "PT Sans", Tahoma, sans-serif;
   text-align: center;
   color: #ffffff;
 }
@@ -146,7 +145,7 @@ background-color: #293449;
 .titleOpening {
   font-style: italic;
   font-weight: 400;
-  font-size:16px;
+  font-size: 16px;
   line-height: 1.44;
   color: #ee3643;
 }
@@ -155,14 +154,13 @@ background-color: #293449;
   font-size: 21PX;
   line-height: 1;
   color: #ee3643;
- }
+}
 
 .headAddress {
-  font:14px/1.71 Cuprum;
   font-size: 14PX;
   line-height: 1.71;
   color: #32425c;
- }
+}
 
 .mainRegistration a {
   font-size: 21px;
@@ -184,7 +182,7 @@ background-color: #293449;
 }
 
 .breadcrumbs a {
-  font:13/1.38 "PT Sans", Tahoma,  sans-serif;
+  font: 13/1.38 "PT Sans", Tahoma, sans-serif;
   color: #000000;
 }
 
@@ -192,7 +190,6 @@ background-color: #293449;
   box-shadow: inset 0px -5px 0 0 #293449;
   background-color: #32425c;
 }
-
 
 .mainNav a {
   font-size: 17px;
@@ -214,7 +211,7 @@ background-color: #293449;
 }
 
 .titleMainFilter {
-  font: 13px/1.38 "PT Sans", Tahoma,  sans-serif;
+  font: 13px/1.38 "PT Sans", Tahoma, sans-serif;
   color: #000000;
   background-color: #f7f3ec;
 }
@@ -222,19 +219,19 @@ background-color: #293449;
 .titleFilterMaker,
 .titlePrice,
 .titlepowerSupply {
-  font: 17px/1.76 "PT Sans", Tahoma,  sans-serif;
+  font: 17px/1.76 "PT Sans", Tahoma, sans-serif;
   color: #000000;
 }
 
 .allMaker,
-.allPowerSupply  {
-  font: 15px/1.33 "PT Sans", Tahoma,  sans-serif;
+.allPowerSupply {
+  font: 15px/1.33 "PT Sans", Tahoma, sans-serif;
   color: #000000;
   text-transform: uppercase;
 }
 
 .buttonFilter {
-  font: 13px/1.38 "PTSans", Tahoma,  sans-serif;
+  font: 13px/1.38 "PTSans", Tahoma, sans-serif;
   text-align: center;
   color: #000000;
   width: 140px;
@@ -247,19 +244,22 @@ background-color: #293449;
   color: #ffffff;
 }
 
-.material  {
+.material {
   background-color: #ffbf47;
 }
 
 .tools {
   background-color: #3bbce3;
 }
+
 .technique {
   background-color: #dc91d8;
 }
-.discount{
-  background-color:#8ed78f;
+
+.discount {
+  background-color: #8ed78f;
 }
+
 .listDelivery {
   background-color: #ffbf47;
 }
@@ -293,7 +293,7 @@ background-color: #293449;
 }
 
 .popularGoods,
-.popularMaker{
+.popularMaker {
   font-size: 14px;
   line-height: 1.29;
   background-color: #ee3643;
@@ -301,7 +301,7 @@ background-color: #293449;
 }
 
 .priceTitle {
-  font: 700 18px/1.11 "PT Sans", Tahoma,  sans-serif;
+  font: 700 18px/1.11 "PT Sans", Tahoma, sans-serif;
   color: #000000;
 }
 
@@ -310,13 +310,13 @@ background-color: #293449;
 }
 
 .oldPrice {
-  font: 700 17px/1.06 "PT Sans", Tahoma,  sans-serif;
+  font: 700 17px/1.06 "PT Sans", Tahoma, sans-serif;
   text-align: center;
   color: #a9a9a9;
 }
 
-.price  {
-  font: 700 17px/1.06 "PT Sans", Tahoma,  sans-serif;
+.price {
+  font: 700 17px/1.06 "PT Sans", Tahoma, sans-serif;
   color: #ffffff;
   /*временный бг*/
   background-color: #ee3643;
@@ -349,11 +349,11 @@ background-color: #293449;
 }
 
 .goodServises p {
-  font: 13px/1.85 "PT Sans", Tahoma,  sans-serif;
+  font: 13px/1.85 "PT Sans", Tahoma, sans-serif;
   color: #000000;
 }
 
-.mainDeliveryControl   {
+.mainDeliveryControl {
   background-color: #32425c;
   font-weight: 700;
   font-size: 21px;
@@ -368,7 +368,7 @@ background-color: #293449;
 }
 
 .descrDelivery {
-  font: 13px/1.85 "PT Sans", Tahoma,  sans-serif;
+  font: 13px/1.85 "PT Sans", Tahoma, sans-serif;
   color: #000000;
 }
 
@@ -383,7 +383,7 @@ background-color: #293449;
 }
 
 .descrCompany {
-  font: 13px/1.85 "PT Sans", Tahoma,  sans-serif;
+  font: 13px/1.85 "PT Sans", Tahoma, sans-serif;
   color: #000000;
 }
 
@@ -407,7 +407,7 @@ background-color: #293449;
 }
 
 .footerContact {
-  font: 13px/1.85 "PT Sans", Tahoma,  sans-serif;
+  font: 13px/1.85 "PT Sans", Tahoma, sans-serif;
   color: #000000;
 }
 
@@ -427,7 +427,7 @@ background-color: #293449;
   background-color: #32425c;
 }
 
-.mainFooteraddress{
+.mainFooteraddress {
   font-size: 18px;
   line-height: 1.33;
   color: #f3f7f9;
