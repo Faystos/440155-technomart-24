@@ -1,0 +1,11 @@
+@font-face {
+  font: "PT Sans";
+  src: url("font/PT Sans.woff2") format('woff2'),
+       url("font/PT Sans.woff") format("woff");
+}
+
+@font-face {
+  font: "PT Sans Bold" 700;
+  src: url("font/PT Sans Bold.woff2") format("woff2"),
+       url("font/PT Sans Bol.woff") format("woff");
+}
