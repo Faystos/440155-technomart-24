@@ -68,9 +68,12 @@
   <main>
     <div class="wrap">
       <ul class="breadcrumbs">
-        <li class="breadHome"><a href="index.html" alt="домой"></a></li>
+        <li><a href="index.html" alt="домой"><img class="breadHome" src="img/icon/icon-home.svg" width= "14px" height="12px" /></a></li>
+        <li><img class="smalRight" src="img/icon/icon-right-small.svg" width="8px" height="12px"/></li>
         <li class="breadKatalog"><a href="#" alt="каталог">Каталог</a></li>
+        <li><img class="smalRight" src="img/icon/icon-right-small.svg" width="8px" height="12px"/></li>
         <li class="breadTool"><a href="#" alt="инструмент">Инструмент</a></li>
+        <li><img class="smalRight" src="img/icon/icon-right-small.svg" width="8px" height="12px"/></li>
         <li class="breadPerforator"><a href="#" alt="перфораторы">Перфораторы</a></li>
       </ul>
 
@@ -102,7 +105,33 @@
           <div class="listWare">
             <section class="mainSort">
               <h2 class="titlePrice">ЦЕНА:</h2>
-              <div class="formSlider"></div>
+              <div class="formSlider">
+               <!-- сложный фильтр-->
+                <form method="get" action="#">
+                  <fieldset class="filterItem">
+
+                    <div class="rangeFilter">
+                      <div class="rangeControls">
+                        <div class="scale">
+                          <div class="bar"></div>
+                        </div>
+                        <div class="toggle toggleMin"></div>
+                        <div class="toggle toggleMax"></div>
+                      </div>
+
+                      <div class="priceControls">
+                        <label class="minPrice"><input name="minPrice" type="text" value="0"></label>
+                        <label class="maxPrice"><input name="maxPrice" type="text" value="30000"></label>
+                      </div>
+
+                    </div>
+                  </fieldset>
+                </form>
+               <!--                    -->
+
+
+
+              </div>
               <form class="filterForm" action="#" method="get" name="filter">
                 <div class="mainFilterMaker">
                   <h3 class="titleFilterMaker">ПРОИЗВОДИТЕЛИ:</h3>
@@ -153,7 +182,7 @@
                 <li class="newProduct rightList">
                   <img src="img/catalog/bfg3k.jpg" alt="bfg2k">
                   <h3 class="priceTitle"><a class="productPrice" href="#">Перфоратор BOSCH BFG 2000</a></h3>
-                  <a class="price" href="BFG2K.html">12500 Р.</a>
+                  <a class="price notOld" href="BFG2K.html">12500 Р.</a>
                   <div class="pricePopup">
                     <a class="buyPopup" href="#">Купить</a>
                     <a class="basketPopup" href="#">В корзину</a>
@@ -182,7 +211,7 @@
                 <li class="rightList">
                   <img src="img/catalog/bfg3k.jpg" alt="bfg2k">
                   <h3 class="priceTitle"><a class="productPrice" href="#">Перфоратор BOSCH BFG 2000</a></h3>
-                  <a class="price" href="BFG2K.html">12500 Р.</a>
+                  <a class="price notOld" href="BFG2K.html">12500 Р.</a>
                   <div class="pricePopup">
                     <a class="buyPopup" href="#">Купить</a>
                     <a class="basketPopup" href="#">В корзину</a>
@@ -211,7 +240,7 @@
                 <li class="rightList">
                   <img src="img/catalog/bfg3k.jpg" alt="bfg2k">
                   <h3 class="priceTitle"><a class="productPrice" href="#">Перфоратор BOSCH BFG 2000</a></h3>
-                  <a class="price" href="BFG2K.html">12500 Р.</a>
+                  <a class="price notOld" href="BFG2K.html">12500 Р.</a>
                   <div class="pricePopup">
                     <a class="buyPopup" href="#">Купить</a>
                     <a class="basketPopup" href="#">В корзину</a>

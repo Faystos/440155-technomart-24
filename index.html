@@ -56,60 +56,61 @@
     <div class="wrap">
       <div class="mainListServices">
         <ul class="listServices">
-          <li class="material">
-            <!--<img src="img/proposal/icon-material.png" alt="иконка материалов">-->
+          <li class="material listTesh">
+
             <h2 class="titleServises">Материалы</h2>
             <a class="linkServises" href="#">на любой вкус</a>
           </li>
 
-          <li class="tools">
-            <!--<img src="img/proposal/icon-tools.png" alt="иконка инструментов">-->
+          <li class="tools listTesh">
             <h2 class="titleServises">Инструмент</h2>
             <a class="linkServises" href="#">на все случаи</a>
           </li>
 
-          <li class="technique">
-            <!--<img src="img/proposal/icon-technique.png" alt="иконка техники">-->
+          <li class="technique listTesh">
             <h2 class="titleServises">Техника</h2>
             <a class="linkServises" href="#">для стройки</a>
           </li>
           <li class="servicesSlider">
-            <div class="mainSlider">
+
+            <section class="slider">
               <input type="radio" name="slider1" id="slider1_1" checked="checked">
               <input type="radio" name="slider1" id="slider1_2">
 
-              <div class="mainSliderOne">
-                <img src="img/slider/imageSlider1.jpg" alt="Дрели соседям на радость">
-                <p class="sliderTitle">Дрели</p>
-                <p class="sliderText">соседям на радость</p>
+              <div class="sliderBtns">
+                <label for="slider1_1"></label>
+                <label for="slider1_2"></label>
               </div>
 
-              <div class="mainSliderTwo">
-                <img src="img/slider/imageSlider2.jpg" alt="Второй слайд">
-                <p class="sliderTitle">Перфораторы</p>
-                <p class="sliderText">Настоящие мужские игрушки</p>
+              <ul class="sliderList">
+                <li class="sliderItem">
+                  <h3 class="sliderTitle">Дрели</h3>
+                  <p class="sliderText">соседям на радость</p>
+                  <a class="sliderItemButton button" href="#">Открыть Каталог</a>
+                </li>
 
-                <div class="sliderControl">
-                  <label for="slider1_1" class="sliderControlBtn">Первый слайд</label>
-                  <label for="slider1_2" class="sliderControlBtn">Второй слайд</label>
-                </div>
+                <li class="sliderItem">
+                  <h3 class="sliderTitle">Перфораторы</h3>
+                  <p class="sliderText">Настоящие мужские игрушки</p>
+                  <a class="sliderItemButton button" href="#">Открыть Каталог</a>
+                </li>
+              </ul>
 
+              <div class="sliderControl">
+                <label for="slider1_1" class="сontrolBtnLeft"></label>
+                <label for="slider1_2" class="controlBtnRight"></label>
+              </div>
 
-                <div class="sliderBtns">
-                  <label for="slider1_1" class="sliderBtn">Первый слайд</label>
-                  <label for="slider1_2" class="sliderBtn">Второй слайд</label>
-                </div>
+            </section>
 
           </li>
 
-          <li class="discount">
-            <!--<img src="img/proposal/icon-discount.png" alt="иконка скидок">-->
+          <li class="discount listTesh">
             <h2 class="titleServises">Скидка 50%</h2>
             <a class="linkServises" href="#">на 350 товаров</a>
           </li>
 
-          <li class="listDelivery">
-            <!--<img src="img/proposal/icon-delivery.png" alt="иконка доставки">-->
+          <li class="listDelivery listTesh">
             <h2 class="titleServises">Доставка</h2>
             <a class="linkServises" href="#">бесплатно</a>
           </li>
@@ -161,9 +162,8 @@
 
           <li class="newProduct">
             <img src="img/catalog/bfg2k.jpg" alt="bfg2k">
-            <h3 class="priceTitle"><a class="productPrice" href="#">Перфоратор BOSCH BFG 2000</a></h3>
-            <del class="oldPrice hiden">11</del>
-            <a class="price" href="BFG2K.html">12500 Р.</a>
+            <h3 class="priceTitle"><a class="productPrice" href="#">Перфоратор BOSCH BFG 2000</a></h3>            
+            <a class="price notOld" href="BFG2K.html">12500 Р.</a>
             <div class="pricePopup">
               <a class="buyPopup" href="#">Купить</a>
               <a class="basketPopup" href="#">В корзину</a>
@@ -221,6 +221,7 @@
 
     <section class="service">
       <div class="wrap">
+
         <div class="goodServises">
           <h2 class="titleGood">СЕРВИСЫ</h2>
           <p>Хороший интернет-магазин отличается от плохого не только ценами!</p>
@@ -228,7 +229,7 @@
         </div>
 
         <div class="mainDelivery">
-          <input type="radio" class="hiddenDisplay" id="delivery" name="service">
+          <input type="radio" class="hiddenDisplay" id="delivery" name="service" checked>
           <input type="radio" class="hiddenDisplay" id="guarantee" name="service">
           <input type="radio" class="hiddenDisplay" id="loan" name="service">
 
@@ -237,9 +238,10 @@
             <li><label for="guarantee">Гарантия</label></li>
             <li><label for="loan">Кредит</label></li>
           </ul>
+
           <div class="infoDelivery">
+
             <div class="mainDescrDelivery">
-              <img src="img/service/delivery.png" alt="иконка автомобиля">
               <h2 class="titleDelivery">Доставка</h2>
               <div class="descrDelivery">
                 <p>Мы с удовольствие доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
@@ -248,21 +250,25 @@
             </div>
 
             <div class="mainDescrDelivery">
-              <img src="img/service/warranty.png" alt="иконка медали">
               <h2 class="titleDelivery">Гарантия</h2>
-              <div class="descrDelivery">
+              <div class="descrGuarantee">
                 <p>Если купленный у нас товар поломается или заискрит,
                   а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
                 <p>Дом уж восстановите как-нибудь сами.</p>
               </div>
             </div>
+
             <div class="mainDescrDelivery">
-              <img src="img/service/credit.png" alt="иконка купюр">
               <h2 class="titleDelivery">Кредит</h2>
-              <div class="descrDelivery">
-                <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+              <div class="descrLoan">
+                <p>Залезть в долговую яму стало проще!</p>
+                <p> Кредитные консультанты придут вам на помощь.</p>
               </div>
+              <a class="loanForm" href="#" alt="заявка на кредит">отправить заявку</a>
+
+
             </div>
+
           </div>
         </div>
       </div>
