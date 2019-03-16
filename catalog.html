@@ -68,12 +68,9 @@
   <main>
     <div class="wrap">
       <ul class="breadcrumbs">
-        <li><a href="index.html" alt="домой"><img class="breadHome" src="img/icon/icon-home.svg" width= "14px" height="12px" /></a></li>
-        <li><img class="smalRight" src="img/icon/icon-right-small.svg" width="8px" height="12px"/></li>
+        <li><a href="index.html" alt="домой"><img class="breadHome" src="img/icon/icon-home.svg" width="14px" height="12px" /></a></li>
         <li class="breadKatalog"><a href="#" alt="каталог">Каталог</a></li>
-        <li><img class="smalRight" src="img/icon/icon-right-small.svg" width="8px" height="12px"/></li>
         <li class="breadTool"><a href="#" alt="инструмент">Инструмент</a></li>
-        <li><img class="smalRight" src="img/icon/icon-right-small.svg" width="8px" height="12px"/></li>
         <li class="breadPerforator"><a href="#" alt="перфораторы">Перфораторы</a></li>
       </ul>
 
@@ -106,7 +103,8 @@
             <section class="mainSort">
               <h2 class="titlePrice">ЦЕНА:</h2>
               <div class="formSlider">
-               <!-- сложный фильтр-->
+
+                <!-- сложный фильтр-->
                 <form method="get" action="#">
                   <fieldset class="filterItem">
 
@@ -127,28 +125,32 @@
                     </div>
                   </fieldset>
                 </form>
-               <!--                    -->
+                <!--  ************************************************************** -->
 
 
 
               </div>
               <form class="filterForm" action="#" method="get" name="filter">
+
                 <div class="mainFilterMaker">
                   <h3 class="titleFilterMaker">ПРОИЗВОДИТЕЛИ:</h3>
+
+
+
                   <ul class="allMaker">
-                    <li><label class="makerBosch"><input type="checkbox" name="maker[]" value="bosch" checked>bosch</label></li>
-                    <li><label class="makerInterscol"><input type="checkbox" name="maker[]" value="interscol">интерскол</label></li>
-                    <li><label class="makerMakita"><input type="checkbox" name="maker[]" value="makita" checked>makita</label></li>
-                    <li><label class="makerDewalt"><input type="checkbox" name="maker[]" value="dewalt">dewalt</label></li>
-                    <li><label class="makerHitachi"><input type="checkbox" name="maker[]" value="hitachi">hitachi</label></li>
+                    <li><input class="formCheckbox" type="checkbox" name="maker[]" id="bosch" value="bosch" checked><label for="bosch">bosch</label></li>
+                    <li><input class="formCheckbox" type="checkbox" name="maker[]" id="interscol" value="interscol"><label for="interscol">интерскол</label></li>
+                    <li><input class="formCheckbox" type="checkbox" name="maker[]" id="makita" value="makita" checked><label for="makita">makita</label></li>
+                    <li><input class="formCheckbox" type="checkbox" name="maker[]" id="dewalt" value="dewalt"><label for="dewalt">dewalt</label></li>
+                    <li><input class="formCheckbox" type="checkbox" name="maker[]" id="hitachi" value="hitachi"><label for="hitachi">hitachi</label></li>
                   </ul>
                 </div>
 
                 <div class="powerSupply">
                   <h3 class="titlepowerSupply">ПИТАНИЕ:</h3>
                   <ul class="allPowerSupply">
-                    <li><label for="rechargeable"><input type="radio" name="supply" value="rechargeable" checked>аккумуляторные</label></li>
-                    <li><label for="networking"><input type="radio" name="supply" value="networking">сетевые</label></li>
+                    <li><input class="formRadio" type="radio" name="supply" id="rechargeable" value="rechargeable" checked><label for="rechargeable">аккумуляторные</label></li>
+                    <li><input class="formRadio" type="radio" name="supply" id="networking" value="networking"><label for="networking">сетевые</label></li>
                   </ul>
                 </div>
                 <button class="buttonFilter" type="submit">Показать</button>

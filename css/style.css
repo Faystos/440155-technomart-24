@@ -314,6 +314,7 @@ ul {
 
 .breadcrumbs li {
   position: relative;
+  padding: 0 0 0 40px;
 }
 
 .mainNav {
@@ -382,10 +383,65 @@ ul {
   padding: 0;
 }
 
+.allMaker input,
+.allPowerSupply input {
+  display: none;
+}
+
+.allMaker label,
+.allPowerSupply label {
+  cursor: pointer;
+}
+
+.formCheckbox+label::before {
+  content: "";
+  position: absolute;
+  background: url("../img/icon/checkbox-off.svg") no-repeat;
+  width: 27px;
+  height: 23px;
+  top: 0;
+  left: 0px;
+  opacity: 0.3;
+}
+
+.formCheckbox:checked+label::before {
+  content: "";
+  position: absolute;
+  background: url("../img/icon/checkbox-on.svg") no-repeat;
+  width: 27px;
+  height: 23px;
+  top: 0;
+  left: 0px;
+  opacity: 0.3;
+}
+
+.formRadio+label::before {
+  content: "";
+  position: absolute;
+  background: url("../img/icon/radio-off.svg") no-repeat;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  left: 0px;
+  opacity: 0.3;
+}
+
+.formRadio:checked+label::before {
+  content: "";
+  position: absolute;
+  background: url("../img/icon/radio-on.svg") no-repeat;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  left: 0px;
+  opacity: 0.3;
+}
+
 .allMaker li,
 .allPowerSupply li {
   margin: 0 0 17px 0;
-  padding: 0;
+  padding: 0 0 0 35px;
+  position: relative;
 }
 
 .buttonFilter {
@@ -414,16 +470,18 @@ ul {
   background-color: #dc91d8;
 }
 
-.discount {
+.listServices .discount {
   background-color: #8ed78f;
+  margin-left: 640px;
+  margin-right: 0;
+  margin-top: -266px;
 }
 
-.listDelivery {
-  align-self: flex-end;
+.listServices .listDelivery {
   background-color: #ffbf47;
+  margin-left: 640px;
+  margin-top: -123px;
 }
-
-
 
 .popular {
   background-color: #f9f5f0;
@@ -449,7 +507,6 @@ ul {
   margin: 0;
   padding: 5px 0 0 24px;
   width: 250px;
-
 }
 
 .titlePopular {
@@ -880,7 +937,7 @@ ul {
 .wrap {
   width: 960px;
   padding: 0 10px;
-  margin: 0 auto;
+  margin: 0 0 0 120px;
 }
 
 .mainOrderWrap {
@@ -918,6 +975,7 @@ ul {
 .headSearch input:-ms-input-placeholder {
   color: #ffffff;
 }
+
 .headSearch input:focus::-webkit-input-placeholder,
 .headSearch input::-moz-placeholder,
 .headSearch input:-moz-placeholder,
@@ -925,20 +983,18 @@ ul {
   color: #000000;
 }
 
- .headSearch input:hover  {
+.headSearch input:hover {
   background-color: #212a3a;
 }
 
-.headSearch input:hover ~ label::before {
+.headSearch input:hover~label::before {
   opacity: 1;
 }
 
-.headSearch input:focus ~ label::before {
+.headSearch input:focus~label::before {
   background: url("../img/icon/icon-search-red.svg") no-repeat;
   opacity: 1;
 }
-
-
 
 .headSearch input:focus {
   background-color: #ffffff;
@@ -954,7 +1010,6 @@ ul {
   left: 17px;
   opacity: 0.3;
 }
-
 
 .placeOrder,
 .basket,
@@ -1151,12 +1206,11 @@ ul {
 /* ************************ */
 .listServices {
   display: flex;
-  justify-content: flex-end;
   align-items: flex-start;
+  align-content: flex-start;
   flex-wrap: wrap;
   padding: 0;
-  margin: 0;
-  width: 960px;
+  margin: 0 0 -20px 0;
   height: 450px;
 }
 
@@ -1164,6 +1218,10 @@ ul {
   width: 300px;
   min-height: 123px;
   margin: 0 20px 20px 0;
+}
+
+.listTesh:nth-child(3n) {
+  margin-right: 0;
 }
 
 .titleServises {
@@ -1183,7 +1241,6 @@ ul {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-
 .linkServises:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -1192,10 +1249,10 @@ ul {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
- .servicesSlider {
-   width: 620px;
-   height: 266px;
-    margin: 0 20px 0 0;
+.servicesSlider {
+  width: 620px;
+  height: 266px;
+  margin: 0 20px 0 0;
 }
 
 /* *************************** */
@@ -1232,7 +1289,7 @@ ul {
   position: relative;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin: 0;
+  margin: 20px -10px;
   padding: 0;
 }
 
@@ -1246,8 +1303,6 @@ ul {
   z-index: 10;
 }
 
-
-
 .priceList li {
   display: flex;
   flex-wrap: wrap;
@@ -1259,13 +1314,12 @@ ul {
   height: 318px;
   min-height: 318px;
   border: 1px solid #eaeaea;
-  margin: 21px 20px 21px 0;
+  margin: 0 10px 20px 10px;
 }
 
-.priceList li:last-child {
+/*.priceList li:last-child {
   margin: 21px 0 21px 0;
-}
-
+}*/
 .priceList li:hover {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
@@ -1286,15 +1340,18 @@ ul {
   padding: 0;
 }
 
-.makerList  {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.makerList {
   width: 220px;
   min-height: 145px;
   border: 1px solid #eaeaea;
   margin: 0 20px 20px 0;
-  cursor: pointer;
+}
+
+.makerList a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .makerList:nth-child(4n+4) {
@@ -1459,12 +1516,17 @@ ul {
 
 .listCompany li {
   margin: 0 0 22px 0;
+  position: relative;
+  padding: 0 0 0 35px;
 }
 
 .listCompany li::before {
-  content: "— ";
-  color: #ee3643;
-  .
+  content: "";
+  width: 25px;
+  border-bottom: 2px solid #ee3643;
+  position: absolute;
+  left: 0;
+  top: 8px;
 }
 
 .mainfooterContact {
@@ -1543,9 +1605,6 @@ ul {
   padding: 0;
 }
 
-.breadKatalog {
-  padding: 0;
-}
 .breadHome {
   padding: 3px 0 0 0;
 }
@@ -1560,15 +1619,6 @@ ul {
   left: 5px;
 }*/
 
-/*.breadKatalog::before {
-  content: "";
-  width: 8px;
-  height: 12px;
-  position: absolute;
-  background: url("../img/icon/icon-right-small.svg") no-repeat;
-  top: 2px;
-  left: 33px;
-}*/
 
 /*.breadTool::before {
   content: "";
@@ -1579,7 +1629,6 @@ ul {
   top: 2px;
   left: 15px;
 }*/
-
 /*.breadPerforator::before {
   content: "";
   width: 8px;
@@ -1589,7 +1638,6 @@ ul {
   top: 2px;
   left: 20px;
 }*/
-
 .breadTool {
   padding: 0;
 }
@@ -1602,7 +1650,6 @@ ul {
   padding: 3px 0 0 0;
   margin: 0 15px 0 15px;
 }
-
 
 .titleNameItem {
   display: block;
@@ -1738,7 +1785,7 @@ ul {
   margin: 0 20px 0 0;
 }
 
-.priceList .leftList {
+/*.priceList .leftList {
   margin: 20px 20px 0 0;
 }
 
@@ -1748,8 +1795,7 @@ ul {
 
 .priceList .rightList {
   margin: 20px 0 0 20px;
-}
-
+} */
 .pagination {
   display: flex;
   margin: 52px 0 0 0;
@@ -1813,9 +1859,7 @@ ul {
   background-color: #ee3643;
 }
 
-
 /* Стили сложного фильтра*/
-
 .filterItem {
   margin: 0;
   padding: 0;
@@ -1855,7 +1899,6 @@ ul {
   padding: 0;
   border: 8px solid #ffffff;
   background-color: #ababab;
-
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 #cfcfcf;
   position: absolute;
@@ -1907,22 +1950,16 @@ ul {
   padding: 0;
 }
 
-
-
 /* *********************  */
-
-
 /* Сервис слайдер  */
-
 .sliderItem {
   display: none;
   position: relative;
   /*padding: 26px 0 0 26px; */
-   width: 620px;
+  width: 620px;
   height: 266px;
   color: #ffffff;
 }
-
 
 .sliderItem:nth-child(1) {
   background: url("../img/icon/slide1.jpg") no-repeat;
@@ -1957,7 +1994,6 @@ ul {
   background-color: #fb565a;
   border-radius: 3px;
   border: none;
-
   position: absolute;
   bottom: 22px;
   left: 25px
@@ -1991,14 +2027,14 @@ ul {
 }
 
 .sliderBtns {
-    width: 160px;
-    height: 10px;
-    margin: 0 0 0 -80px;
-    position: absolute;
-    bottom: 36px;
-    left: 50%;
-    z-index: 1;
-    text-align: center;
+  width: 160px;
+  height: 10px;
+  margin: 0 0 0 -80px;
+  position: absolute;
+  bottom: 36px;
+  left: 50%;
+  z-index: 1;
+  text-align: center;
 }
 
 .slider #slider1_1:checked~.sliderBtns label[for="slider1_1"],
@@ -2014,9 +2050,8 @@ ul {
   display: block;
 }
 
-
 .сontrolBtnLeft::after {
-  content: "" ;
+  content: "";
   position: absolute;
   background: url("../img/icon/icon-left.svg") no-repeat;
   width: 22px;
@@ -2027,7 +2062,7 @@ ul {
 }
 
 .controlBtnRight::after {
-  content: "" ;
+  content: "";
   position: absolute;
   background: url("../img/icon/icon-right.svg") no-repeat;
   width: 22px;
@@ -2037,11 +2072,7 @@ ul {
   cursor: pointer;
 }
 
-
-
 /* ************* */
-
-
 /* слайдер с описанием*/
 .mainDelivery input {
   display: none;
@@ -2062,7 +2093,7 @@ ul {
   height: 279px;
   width: 10px;
   margin: -136px 0 0 0;
-    background: url("../img/icon/shadowLabel.png") no-repeat;
+  background: url("../img/icon/shadowLabel.png") no-repeat;
   position: absolute;
   top: 50%;
   right: 0px;
@@ -2080,7 +2111,7 @@ ul {
   cursor: pointer;
 }
 
-.mainDeliveryControl label:hover:not(:checked){
+.mainDeliveryControl label:hover:not(:checked) {
   background: #293449;
 }
 
@@ -2146,45 +2177,45 @@ ul {
 }
 
 .mainDescrDelivery:nth-child(1)::after {
-    content: "";
-    background: url("../img/icon/dewer.png") no-repeat;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 468px;
-    height: 100%;
+  content: "";
+  background: url("../img/icon/dewer.png") no-repeat;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 468px;
+  height: 100%;
 }
 
 .mainDescrDelivery:nth-child(2)::after {
-    content: "";
-    background: url("../img/icon/guarant.png") no-repeat;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 389px;
-    height: 100%;
+  content: "";
+  background: url("../img/icon/guarant.png") no-repeat;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 389px;
+  height: 100%;
 }
 
 .mainDescrDelivery:nth-child(3)::after {
-    content: "";
-    background: url("../img/icon/loan.png") no-repeat;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 465px;
-    height: 100%;
+  content: "";
+  background: url("../img/icon/loan.png") no-repeat;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 465px;
+  height: 100%;
 }
 
 .loanForm {
   display: block;
-    padding: 12px 0;
-    background: #ff5357;
-    border-radius: 3px;
-    color: #ffffff;
-    text-transform: uppercase;
-    text-align: center;
-    width: 195px;
-    margin: 43px 0 0 0;
+  padding: 12px 0;
+  background: #ff5357;
+  border-radius: 3px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  width: 195px;
+  margin: 43px 0 0 0;
 }
 
 .loanForm:hover {
