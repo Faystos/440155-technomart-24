@@ -42,15 +42,3 @@ mapsClose.addEventListener("click", function (evt) {
   evt.preventDefault();
   mapsPopup.classList.remove("mainFooterPopupOpen");
 });
-
-/*buys.forEach(function(item){
-   item.addEventListener("click", function (evt) {
-   evt.preventDefault();
-   buyForm.classList.add("popupBasketFormOpen");
-});
-});
-
-buyFormClose.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  buyForm.classList.remove("popupBasketFormOpen");
-}); */
