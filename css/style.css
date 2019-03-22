@@ -122,7 +122,6 @@ ul {
   line-height: 1;
   text-align: center;
   color: #000000;
-  /*padding: 73px 105px 0 179px;*/
   margin: 65px 0 70px 170px;
 }
 
@@ -526,20 +525,6 @@ ul {
   position: relative;
 }
 
-/*.allMaker li:nth-child(2) {
-	margin: 0 0 21px 0;
-
-}
-
-.allMaker li:nth-child(3) {
-	margin: 0 0 21px 0;
-
-}
-
-.allMaker li:nth-child(4) {
-	margin: 0 0 21px 0;
-
-}*/
 .buttonFilter {
   font: 13px/1.38 "PTSans", Tahoma, sans-serif;
   text-align: center;
@@ -736,16 +721,6 @@ ul {
   right: -4px;
 }
 
-/*.price::after {
-  content: "";
-  position: absolute;
-  width: 141px;
-  height: 38px;
-  background: url("../img/icon/icon-price.svg") no-repeat;
-  top: -10px;
-  right: -40px;
-  z-index: -1;
-}*/
 .notOld {
   margin: 40px 0 0 3px;
   padding: 10px 0 10px 0;
@@ -988,16 +963,17 @@ ul {
   position: absolute;
   width: 620px;
   height: 423px;
+  background-color: #ffffff;
   border-top: 7px solid #ee3643;
-  background-color: #ffff;
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
   bottom: -17%;
   left: 17%;
-  z-index: 100;
+  z-index: 10000;
 }
 
 .popupContactOpen {
   display: block;
+  background-color: #ffffff;
 }
 
 .mainMessage {
@@ -1006,7 +982,6 @@ ul {
   font-size: 18px;
   line-height: 1;
   color: #000000;
-  /*padding: 41px 10px 0 80px;*/
   padding: 0 10px;
   margin: 45px 0 0 70px;
 }
@@ -1166,7 +1141,6 @@ ul {
   background-color: #ba2732;
 }
 
-/*!!!!!!!!!!!*/
 .wrap {
   width: 960px;
   padding: 0 10px;
@@ -1461,7 +1435,6 @@ ul {
   padding: 20px 55px 23px 32px;
 }
 
-/* ************************ */
 .listServices {
   display: flex;
   align-items: flex-start;
@@ -1512,7 +1485,6 @@ ul {
   margin: 0 20px 0 0;
 }
 
-/* *************************** */
 .popular, .mainPopularMake {
   display: flex;
   align-items: center;
@@ -1529,7 +1501,6 @@ ul {
   margin: 0;
 }
 
-/* ************ */
 .pricePopup {
   display: none;
   flex-direction: column;
@@ -1575,12 +1546,8 @@ ul {
   min-height: 318px;
   border: 1px solid #eaeaea;
   margin: 0 10px 20px 10px;
-  /*padding-bottom: 21px;*/
 }
 
-/*.priceList li:last-child {
-  margin: 21px 0 21px 0;
-}*/
 .priceList li:hover {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
 }
@@ -1671,8 +1638,6 @@ ul {
   margin: 0;
   padding: 0;
 }
-
-
 
 .otherNavListFooter {
   margin: 35px 0 0 23px;
@@ -1912,7 +1877,6 @@ ul {
   color: #ee3643;
 }
 
-/* Каталог */
 .breadcrumbs {
   display: flex;
   padding: 0;
@@ -1923,33 +1887,6 @@ ul {
   padding: 3px 0 0 0;
 }
 
-/*.breadHome a::before {
-  content: "";
-  width: 14px;
-  height: 12px;
-  position: absolute;
-  background: url("../img/icon/icon-home.svg") no-repeat;
-  top: 2px;
-  left: 5px;
-}*/
-/*.breadTool::before {
-  content: "";
-  width: 8px;
-  height: 12px;
-  position: absolute;
-  background: url("../img/icon/icon-right-small.svg") no-repeat;
-  top: 2px;
-  left: 15px;
-}*/
-/*.breadPerforator::before {
-  content: "";
-  width: 8px;
-  height: 12px;
-  position: absolute;
-  background: url("../img/icon/icon-right-small.svg") no-repeat;
-  top: 2px;
-  left: 20px;
-}*/
 .breadTool {
   padding: 0;
 }
@@ -2161,7 +2098,6 @@ ul {
   background-color: #ee3643;
 }
 
-/* Стили сложного фильтра*/
 .filterItem {
   margin: 0;
   padding: 0 0 25px 0;
@@ -2249,12 +2185,9 @@ ul {
   margin: 0 0 0 25px;
 }
 
-/* *********************  */
-/* Сервис слайдер  */
 .sliderItem {
   display: none;
   position: relative;
-  /*padding: 26px 0 0 26px; */
   width: 620px;
   height: 266px;
   color: #ffffff;
@@ -2371,8 +2304,6 @@ ul {
   cursor: pointer;
 }
 
-/* ************* */
-/* слайдер с описанием*/
 .mainDelivery input {
   display: none;
 }
@@ -2525,5 +2456,3 @@ ul {
   align-items: адflex-start;
   padding: 0;
 }
-
-/* ****************** */
