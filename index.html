@@ -172,6 +172,17 @@
           </li>
 
         </ul>
+
+        <div class="popupBasketForm">
+          <!--<img src="img/form/form-basket.png" alt="Картинка подтвердающая заказ">-->
+          <p class="basketForm">Товар добавлен в корзину!</p>
+          <div class="buttonsForm">
+            <a class="buys" href="#">ОФОРМИТЬ ЗАКАЗ</a>
+            <button class="basketButton" type="button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+          </div>
+          <button class="popupClose formBuyClose" type="button">закрыть</button>
+
+        </div>
       </section>
 
       <section class="mainPopularMaker">
@@ -299,29 +310,31 @@
             <a class="ourLocation" href="#"><img src="img/maps/maps.jpg" width="300px" height="158px" alt="г.Санкт-Петербург, ул.Б.Клнюшенная,д.19/8"></a>
           </div>
           <a class="writeToUs" href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ! </a>
+
           <div class="mainFooterPopup">
             <img class="footerPopup" src="img/maps/popupmaps.jpg" alt="Всплывающая карта">
-            <button class="popupClose" type="button">Закрыть</button>
+            <button class="popupClose mapsClose" type="button">Закрыть</button>
           </div>
+
         </div>
         <div class="popupContact">
           <form class="mainMessage" action="#" method="post" name="mainMessage">
             <fieldset class="nameMessage">
-              <label for="name"><span>Ваше Имя:</span></label>
+              <label for="name"><span>Ваше имя:</span></label>
               <input type="text" name="name" id="name" placeholder="Имя Фамилия" pattern="\D [^0-9]" required>
             </fieldset>
             <fieldset class="emailMessage">
               <label for="email"><span>Ваш e-mail:</span></label>
               <input type="email" name="e-mail" id="email" placeholder="email@example.com" required>
             </fieldset>
-            <label for="message"><span>Текст письма:</span><textarea name="message" id="message" placeholder="В свободной форме" required></textarea></label>
+            <label for="message"><span class="textMail">Текст письма:</span><textarea name="message" id="message" placeholder="В свободной форме" required></textarea></label>
           </form>
 
           <div class="mainFormSend">
             <button class="formSend" type="submit">Отправить</button>
           </div>
 
-          <button class="popupClose" type="button"></button>
+          <button class="popupClose contactClose" type="button"></button>
         </div>
       </section>
     </div>
@@ -386,6 +399,54 @@
     </div>
 
   </footer>
+
+  <script>
+
+  var link = document.querySelector(".writeToUs");
+  var emailForm = document.querySelector(".popupContact");
+  var popupContactClose = document.querySelector(".contactClose");
+  var maps = document.querySelector(".ourLocation");
+  var mapsPopup = document.querySelector(".mainFooterPopup");
+  var mapsClose = document.querySelector(".mapsClose");
+  var names = document.querySelector("[name=name]");
+  var buys = document.querySelector(".buyPopup");
+  var buyForm = document.querySelector(".popupBasketForm")
+  var buyFormClose = document.querySelector(".formBuyClose")
+
+
+  link.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    emailForm.classList.add("popupContactOpen");
+    names.focus();
+  });
+
+  popupContactClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    emailForm.classList.remove("popupContactOpen");
+  });
+
+  maps.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapsPopup.classList.add("mainFooterPopupOpen");
+  });
+
+  mapsClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapsPopup.classList.remove("mainFooterPopupOpen");
+  });
+
+  buys.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    buyForm.classList.add("popupBasketFormOpen");
+  });
+
+  buyFormClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    buyForm.classList.remove("popupBasketFormOpen");
+  });
+
+
+  </script>
 </body>
 
 </html>
