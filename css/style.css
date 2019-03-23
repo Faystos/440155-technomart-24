@@ -920,8 +920,8 @@ ul {
   color: #ffd180;
 }
 
-.footerInformation {
-  background-color: #293449;
+.legalInformation {
+  margin: 37px 0 0 0;
 }
 
 .legalInformation p {
@@ -933,6 +933,9 @@ ul {
   margin: 0;
 }
 
+.mainFooterSocial {
+  margin: 29px 0 0 0;
+}
 .social {
   display: inline-block;
   background-color: #212a3a;
@@ -1456,7 +1459,7 @@ ul {
   align-content: flex-start;
   flex-wrap: wrap;
   padding: 0;
-  margin: 0 0 11px 0;
+  margin: 59px 0 11px 0;
   height: 450px;
 }
 
@@ -1671,14 +1674,15 @@ ul {
 
 .footerInformation {
   background-color: #293449;
+
 }
 
 .footerInformationWrap {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   width: 960px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 10px 0 10px;
   min-height: 107px;
 }
 
@@ -1737,6 +1741,7 @@ ul {
 .linkMail {
   display: flex;
   margin-left: 101px;
+  margin-top: 37px;
   padding-left: 10px;
 }
 
