@@ -131,6 +131,7 @@ ul {
   align-items: center;
   min-height: 112px;
   background-color: #f1f1f1;
+  padding: 37px 0 37px 0;
 }
 
 .buttonsForm a {
@@ -1032,17 +1033,21 @@ ul {
   color: #a9a9a9;
 }
 
-.headSearch input::-moz-placeholder {
+.mainMessage input::-moz-placeholder {
   font: 13px/1.38 "PT Sans", Tahoma, sans-serif;
   color: #a9a9a9;
 }
 
-.headSearch input:-moz-placeholder {
+.mainMessage input:-moz-placeholder {
   font: 13px/1.38 "PT Sans", Tahoma, sans-serif;
   color: #a9a9a9;
 }
 
-.headSearch input:-ms-input-placeholder {
+.mainMessage input:-ms-input-placeholder {
+  font: 13px/1.38 "PT Sans", Tahoma, sans-serif;
+  color: #a9a9a9;
+}
+.mainMessage input::-ms-input-placeholder {
   font: 13px/1.38 "PT Sans", Tahoma, sans-serif;
   color: #a9a9a9;
 }
@@ -1058,6 +1063,11 @@ ul {
 }
 
 .mainMessage textarea:-moz-placeholder {
+  font: 13px/1.38 "PT Sans", Tahoma, sans-serif;
+  color: #a9a9a9;
+}
+
+.mainMessage textarea::-moz-placeholder {
   font: 13px/1.38 "PT Sans", Tahoma, sans-serif;
   color: #a9a9a9;
 }
@@ -1092,7 +1102,7 @@ ul {
 
 .popupClose::after {
   content: "";
-  position: absolute;  
+  position: absolute;
   width: 21px;
   height: 21px;
   background: url("../img/icon/icon-close.svg") no-repeat;
@@ -1189,6 +1199,9 @@ ul {
 .headSearch input:-ms-input-placeholder {
   color: #ffffff;
 }
+.headSearch input::-ms-input-placeholder {
+  color: #ffffff;
+}
 
 .headSearch input:focus::-webkit-input-placeholder {
   color: #000000;
@@ -1203,6 +1216,10 @@ ul {
 }
 
 .headSearch input:focus:-ms-input-placeholder {
+  color: #000000;
+}
+
+.headSearch input:focus::-ms-input-placeholder {
   color: #000000;
 }
 
@@ -1381,7 +1398,7 @@ ul {
   display: flex;
   min-height: 60px;
   align-items: center;
-  margin: 0 0 60px 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -1878,7 +1895,7 @@ ul {
 .breadcrumbs {
   display: flex;
   padding: 0;
-  margin: -40px 0 20px 0;
+  margin: 20px 0 20px 0;
 }
 
 .breadHome {

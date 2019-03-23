@@ -9,12 +9,12 @@ var buys = document.querySelectorAll(".buyPopup");
 var buyForm = document.querySelector(".popupBasketForm")
 var buyFormClose = document.querySelector(".formBuyClose")
 
-buys.forEach(function(item){
-   item.addEventListener("click", function (evt) {
-   evt.preventDefault();
-   buyForm.classList.add("popupBasketFormOpen");
-});
-});
+for (var i = 0; i < buys.length; i++) {
+  buys[i].addEventListener("click", function (evt) {
+    evt.preventDefault();
+    buyForm.classList.add("popupBasketFormOpen");
+  });
+};
 
 buyFormClose.addEventListener("click", function (evt) {
   evt.preventDefault();
