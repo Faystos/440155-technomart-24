@@ -38,10 +38,6 @@ a {
   text-decoration: none;
 }
 
-ul {
-  list-style: none;
-}
-
 .mainHeader {
   background-color: #f4f7f9;
   min-height: 320px;
@@ -101,7 +97,7 @@ ul {
   box-shadow: 0px 20px 40px 0 rgba(41, 52, 73, 0.75);
   background-color: #ffffff;
   position: absolute;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
   z-index: 100;
@@ -310,6 +306,7 @@ ul {
   display: flex;
   padding: 0;
   margin: 9px 0 0 68px;
+  list-style: none;
 }
 
 .personalAccount a {
@@ -409,6 +406,7 @@ ul {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .allMaker {
@@ -679,11 +677,11 @@ ul {
 .priceList img {
   width: 218px;
   height: 170px;
-  margin: 0 0 10px 0
+  margin: 0 0 5px 0
 }
 
 .priceTitle a {
-  display: inline-block;
+  display: block;
   width: 160px;
   color: inherit;
   margin: 0;
@@ -696,20 +694,21 @@ ul {
   text-align: center;
   color: #a9a9a9;
   padding: 0 0 0 2px;
-  margin: 14px 0 8px 0;
+  margin: 12px 0 8px 0;
 }
 
 .price {
-  display: inline-block;
-  width: 137px;
+  display: block;
+  align-items: center;
   font: 700 17px/1.06 "PT Sans", Tahoma, sans-serif;
   text-align: center;
-  padding: 10px 3px 10px 0;
+  padding: 10px 34px 10px 34px;
   color: #ffffff;
   background-color: #ee3643;
   position: relative;
   border-radius: 3px;
   margin: 0 0 0 3px;
+  height: 38px;
 }
 
 .price::after {
@@ -724,7 +723,6 @@ ul {
 
 .notOld {
   margin: 40px 0 0 3px;
-  padding: 10px 0 10px 0;
 }
 
 .buyPopup {
@@ -824,6 +822,7 @@ ul {
   line-height: 1.43;
   color: #ffffff;
   position: relative;
+  list-style: none;
 }
 
 .titleDelivery {
@@ -856,6 +855,7 @@ ul {
   font-size: 18px;
   line-height: 1.11;
   color: #000000;
+  list-style: none;
 }
 
 .infoCompany {
@@ -936,8 +936,9 @@ ul {
 .mainFooterSocial {
   margin: 29px 0 0 0;
 }
+
 .social {
-  display: inline-block;
+  display: block;
   background-color: #212a3a;
   position: relative;
   border-radius: 50%;
@@ -1016,7 +1017,6 @@ ul {
   padding: 0;
 }
 
-
 .mainMessage textarea {
   width: 460px;
   height: 114px;
@@ -1026,10 +1026,8 @@ ul {
   background-color: #ffffff;
   border-radius: 3px;
   outline: none;
-  resize:none
+  resize: none
 }
-
-
 
 .mainMessage input::-webkit-input-placeholder {
   font: 13px/1.38 "PT Sans", Tahoma, sans-serif;
@@ -1050,7 +1048,13 @@ ul {
   font: 13px/1.38 "PT Sans", Tahoma, sans-serif;
   color: #a9a9a9;
 }
+
 .mainMessage input::-ms-input-placeholder {
+  font: 13px/1.38 "PT Sans", Tahoma, sans-serif;
+  color: #a9a9a9;
+}
+
+.mainMessage input {
   font: 13px/1.38 "PT Sans", Tahoma, sans-serif;
   color: #a9a9a9;
 }
@@ -1076,6 +1080,11 @@ ul {
 }
 
 .mainMessage textarea:-ms-input-placeholder {
+  font: 13px/1.38 "PT Sans", Tahoma, sans-serif;
+  color: #a9a9a9;
+}
+
+.mainMessage textarea {
   font: 13px/1.38 "PT Sans", Tahoma, sans-serif;
   color: #a9a9a9;
 }
@@ -1202,7 +1211,12 @@ ul {
 .headSearch input:-ms-input-placeholder {
   color: #ffffff;
 }
+
 .headSearch input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.headSearch input {
   color: #ffffff;
 }
 
@@ -1223,6 +1237,10 @@ ul {
 }
 
 .headSearch input:focus::-ms-input-placeholder {
+  color: #000000;
+}
+
+.headSearch input:focus {
   color: #000000;
 }
 
@@ -1403,6 +1421,7 @@ ul {
   align-items: center;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .nav a {
@@ -1461,6 +1480,7 @@ ul {
   padding: 0;
   margin: 59px 0 11px 0;
   height: 450px;
+  list-style: none;
 }
 
 .listTesh {
@@ -1539,6 +1559,7 @@ ul {
   justify-content: flex-start;
   margin: 20px -10px 0 -10px;
   padding: 0;
+  list-style: none;
 }
 
 .newProduct::after {
@@ -1549,21 +1570,22 @@ ul {
   background: url("../img/catalog/new-flag.png") no-repeat;
   right: 0;
   top: 0;
-
 }
 
 .priceList li {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  /*flex-direction: column;*/
   align-items: center;
+  justify-content: center;
   text-align: center;
   position: relative;
   width: 220px;
-  height: 318px;
+  min-height: 318px;
   min-height: 318px;
   border: 1px solid #eaeaea;
   margin: 0 10px 20px 10px;
+  padding: 0 5px 21px 5px;
 }
 
 .priceList li:hover {
@@ -1575,16 +1597,17 @@ ul {
   margin: 0;
 }
 
-.priceList li:hover .pricePopup {
+.productMap:hover .pricePopup {
   display: flex;
 }
 
-.mainPopularMaker ul {
+.makerBlok {
   display: flex;
   flex-wrap: wrap;
   width: 940px;
   padding: 0;
   margin: 20px 0 66px 0;
+  list-style: none;
 }
 
 .makerList {
@@ -1655,6 +1678,7 @@ ul {
   display: flex;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .otherNavListFooter {
@@ -1668,13 +1692,13 @@ ul {
 .navListFooter li:last-child {
   margin: 0;
 }
+
 .otherNavListFooter li:last-child {
   margin: 0;
 }
 
 .footerInformation {
   background-color: #293449;
-
 }
 
 .footerInformationWrap {
@@ -1690,6 +1714,7 @@ ul {
   display: flex;
   padding: 0;
   margin: 7px 0 0 160px;
+  list-style: none;
 }
 
 .footerSocial li {
@@ -1732,11 +1757,11 @@ ul {
   width: 135px;
   margin-right: 53px;
 }
+
 .linkMail p:last-child {
   margin: 0;
-  width: 115px;
+  width: 100px;
 }
-
 
 .linkMail {
   display: flex;
@@ -1768,7 +1793,7 @@ ul {
   right: 0;
 }
 
-.footerPopup{
+.footerPopup {
   width: 100%;
   height: 100%;
 }
@@ -1789,7 +1814,7 @@ ul {
 }
 
 .titleCompany, .titleContact {
-  margin: 79px 0 24px 0;
+  margin: 79px 0 25px 0;
 }
 
 .descrCompany p {
@@ -1800,7 +1825,12 @@ ul {
 }
 
 .descrCompany p:first-child {
+  letter-spacing: 0.01em;
   margin: 0 0 25px 0;
+}
+
+.descrCompany p:nth-child(2) {
+  margin: 0;
 }
 
 .listCompany {
@@ -1837,7 +1867,7 @@ ul {
 }
 
 .footerContact {
-  display: inline-block;
+  display: block;
   margin: 0 0 32px 0;
   padding: 0 100px 0 0;
   width: 300px;
@@ -1901,6 +1931,7 @@ ul {
   display: flex;
   padding: 0;
   margin: 20px 0 20px 0;
+  list-style: none;
 }
 
 .breadHome {
@@ -1939,6 +1970,7 @@ ul {
   margin: 0;
   padding: 11px 0 13px 0;
   text-transform: uppercase;
+  list-style: none;
 }
 
 .sortingUp {
@@ -2059,6 +2091,7 @@ ul {
   display: flex;
   margin: 31px 0 0 1px;
   padding: 0;
+  list-style: none;
 }
 
 .pagination a {
