@@ -1987,58 +1987,54 @@ a {
 .sortingType {
   display: flex;
   align-items: center;
+  position: relative;
   margin: 0;
-  padding: 11px 0 13px 0;
+  padding: 11px 10px 13px 0;
   text-transform: uppercase;
   list-style: none;
 }
 
-.sortingUp {
-  display: flex;
-  margin: 0;
-  padding: 0;
+.upDown {
+  list-style: none;
   position: relative;
-  width: 43px;
-}
+  display: flex;
+  width: 45px;
+  padding: 0;
 
-.sortingUp a:not([href]) {
-  content: "";
-  width: 11px;
-  height: 10px;
-  position: absolute;
-  background: url("../img/icon/icon-up-red.svg") no-repeat;
-  top: -5px;
-  left: 45px;
 }
 
 .up::before {
   content: "";
+  position: absolute;
+  top: -5px;
+  right: -1px;
   width: 11px;
   height: 10px;
-  position: absolute;
-  background: url("../img/icon/icon-up.svg") no-repeat;
-  top: -5px;
-  left: 45px;
+  background: url("../img/icon/icon-up-red.svg") no-repeat;
+  cursor: pointer;
 }
 
 .down::before {
   content: "";
+  position: absolute;
+  top:-5px;
+  right: -33px;
   width: 11px;
   height: 10px;
-  position: absolute;
   background: url("../img/icon/icon-down.svg") no-repeat;
-  top: -5px;
-  right: -45px;
   opacity: 0.2;
+  cursor: pointer;
 }
 
-.down:hover::before,
-.up:hover::before {
+
+
+.down:hover::before {
   opacity: 1;
 }
 
 .catalogSorting {
   display: flex;
+  position: relative;
   align-items: center;
   width: 700px;
 }
