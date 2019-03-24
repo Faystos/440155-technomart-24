@@ -678,7 +678,7 @@ a {
 .priceList img {
   width: 218px;
   height: 170px;
-  margin: 0 0 5px 0
+  margin: 0 0 -2px 0
 }
 
 .priceTitle a {
@@ -695,7 +695,7 @@ a {
   text-align: center;
   color: #a9a9a9;
   padding: 0 0 0 2px;
-  margin: 12px 0 8px 0;
+  margin: 0;
 }
 
 .price {
@@ -703,13 +703,15 @@ a {
   align-items: center;
   font: 700 17px/1.06 "PT Sans", Tahoma, sans-serif;
   text-align: center;
-  padding: 10px 34px 10px 34px;
+  padding: 10px 20px 10px 35px;
   color: #ffffff;
   background-color: #ee3643;
   position: relative;
-  border-radius: 3px;
-  margin: 0 0 0 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  margin: 0 11px 0 0;
   height: 38px;
+
 }
 
 .price::after {
@@ -719,11 +721,13 @@ a {
   border-color: #ffffff #ffffff #ffffff #ee3643;
   position: absolute;
   top: 0px;
-  right: -4px;
+  left: 100%;
 }
 
 .notOld {
-  margin: 40px 0 0 3px;
+  margin: 38px 11px 0 0;
+  padding: 10px 20px 10px 35px;
+
 }
 
 .buyPopup {
@@ -1586,7 +1590,7 @@ a {
   min-height: 318px;
   border: 1px solid #eaeaea;
   margin: 0 10px 20px 10px;
-  padding: 0 5px 21px 5px;
+  padding: 0 5px 15px 5px;
 }
 
 .priceList li:hover {
@@ -1792,6 +1796,21 @@ a {
   position: absolute;
   top: -48%;
   right: 0;
+}
+
+.footerPopup{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.mainFooterPopup iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  border: none;
 }
 
 .footerPopup {
